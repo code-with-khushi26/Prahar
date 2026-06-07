@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "BrahMos",
+    "type": "Cruise Missile",
+    "country": "India",
+    "description": "Supersonic cruise missile, speed Mach 3, range 500km."
+  },
+  {
+    "id": 2,
+    "name": "Tejas",
+    "type": "Fighter Aircraft",
+    "country": "India",
+    "description": "Light combat aircraft developed by HAL for IAF."
+  },
+  {
+    "id": 3,
+    "name": "Arjun MBT",
+    "type": "Main Battle Tank",
+    "country": "India",
+    "description": "Indigenously developed main battle tank with Kanchan armor."
+  },
+  {
+    "id": 4,
+    "name": "Agni-V",
+    "type": "Ballistic Missile",
+    "country": "India",
+    "description": "Intercontinental ballistic missile with range over 5000km."
+  },
+  {
+    "id": 5,
+    "name": "Pinaka",
+    "type": "Rocket Launcher",
+    "country": "India",
+    "description": "Multi-barrel rocket launcher, range up to 90km."
+  },
+  {
+    "id": 6,
+    "name": "Dhruv ALH",
+    "type": "Helicopter",
+    "country": "India",
+    "description": "Advanced light helicopter developed by HAL."
+  },
+  {
+    "id": 7,
+    "name": "Aakash",
+    "type": "Surface-to-Air Missile",
+    "country": "India",
+    "description": "Medium range SAM, can intercept aircraft and missiles."
+  },
+  {
+    "id": 8,
+    "name": "INS Vikrant",
+    "type": "Aircraft Carrier",
+    "country": "India",
+    "description": "India's first domestically built aircraft carrier, 45000 tonnes."
+  },
+  {
+    "id": 9,
+    "name": "Prithvi II",
+    "type": "Ballistic Missile",
+    "country": "India",
+    "description": "Short range ballistic missile, range 350km, liquid fueled."
+  },
+  {
+    "id": 10,
+    "name": "INS Arihant",
+    "type": "Nuclear Submarine",
+    "country": "India",
+    "description": "India's first nuclear powered ballistic missile submarine."
+  },
+  {
+    "id": 11,
+    "name": "Nag",
+    "type": "Anti-Tank Missile",
+    "country": "India",
+    "description": "Third generation fire and forget anti-tank guided missile."
+  },
+  {
+    "id": 12,
+    "name": "Su-30MKI",
+    "type": "Fighter Aircraft",
+    "country": "India",
+    "description": "Multirole air superiority fighter, backbone of IAF."
+  },
+  {
+    "id": 13,
+    "name": "T-90 Bhishma",
+    "type": "Main Battle Tank",
+    "country": "India",
+    "description": "Russian T-90 license built in India, primary MBT of Indian Army."
+  },
+  {
+    "id": 14,
+    "name": "Varunastra",
+    "type": "Torpedo",
+    "country": "India",
+    "description": "Heavy weight torpedo, range 40km, developed by DRDO."
+  },
+  {
+    "id": 15,
+    "name": "Rustom-2",
+    "type": "UAV",
+    "country": "India",
+    "description": "Medium altitude long endurance UAV for ISR missions."
+  },
+  {
+    "id": 16,
+    "name": "AK-203",
+    "type": "Assault Rifle",
+    "country": "India",
+    "description": "Kalashnikov rifle manufactured in India, replacing INSAS."
+  },
+  {
+    "id": 17,
+    "name": "Bofors FH-77",
+    "type": "Howitzer",
+    "country": "India",
+    "description": "155mm towed howitzer, range 30km, in service with Indian Army."
+  },
+  {
+    "id": 18,
+    "name": "Akash Prime",
+    "type": "Surface-to-Air Missile",
+    "country": "India",
+    "description": "Upgraded Akash with improved seeker for cold region operations."
+  },
+  {
+    "id": 19,
+    "name": "P-8I Poseidon",
+    "type": "Maritime Patrol Aircraft",
+    "country": "India",
+    "description": "Boeing maritime patrol aircraft operated by Indian Navy."
+  },
+  {
+    "id": 20,
+    "name": "INSAS",
+    "type": "Assault Rifle",
+    "country": "India",
+    "description": "Indian National Small Arms System, 5.56mm, standard infantry rifle."
+  }
+]
