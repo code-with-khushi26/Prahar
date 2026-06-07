@@ -1,5 +1,6 @@
 from flask import Flask, render_template,request
 import json
+import sqlite3
 
 app = Flask(__name__)
 
@@ -15,9 +16,19 @@ def status():
 @app.route("/search")
 def search():
     query = request.args.get("q", "")
-    with open("data/prahar_kb.json") as f:
-        kb = json.load(f)
-    results = [x for x in kb if query.lower() in x["name"].lower()]
+    conn = sqlite3.connect("database/prahar.db")
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT * FROM weapons 
+        WHERE name LIKE ? OR type LIKE ? OR description LIKE ?
+    """, (f"%{query}%", f"%{query}%", f"%{query}%"))
+    rows = cursor.fetchall()
+    conn.close()
+
+    results = [
+        {"id": r[0], "name": r[1], "type": r[2], "country": r[3], "description": r[4]}
+        for r in rows
+    ]
     return {"results": results}
 
 
