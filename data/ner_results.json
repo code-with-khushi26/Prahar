@@ -1,0 +1,1218 @@
+[
+  {
+    "headline": "India-Norway Green Pact Opens New Business Opportunities | PM Modi in Norway | Watch",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9997718930244446
+      },
+      {
+        "word": "Norway",
+        "type": "LOC",
+        "score": 0.9933438301086426
+      },
+      {
+        "word": "Green Pact",
+        "type": "ORG",
+        "score": 0.9977185726165771
+      },
+      {
+        "word": "New Business Op",
+        "type": "MISC",
+        "score": 0.6681430339813232
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.9990277290344238
+      },
+      {
+        "word": "##di",
+        "type": "PER",
+        "score": 0.5895808339118958
+      },
+      {
+        "word": "Norway",
+        "type": "LOC",
+        "score": 0.9995585083961487
+      },
+      {
+        "word": "Watch",
+        "type": "ORG",
+        "score": 0.855871856212616
+      }
+    ]
+  },
+  {
+    "headline": "India' s UPI On Global March : Lanka Nod To Payment Interface After France, UAE, Singapore",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998027682304382
+      },
+      {
+        "word": "UPI On Global",
+        "type": "ORG",
+        "score": 0.7264339923858643
+      },
+      {
+        "word": "Lanka",
+        "type": "LOC",
+        "score": 0.9994356036186218
+      },
+      {
+        "word": "France",
+        "type": "LOC",
+        "score": 0.9997319579124451
+      },
+      {
+        "word": "UAE",
+        "type": "LOC",
+        "score": 0.9997959733009338
+      },
+      {
+        "word": "Singapore",
+        "type": "LOC",
+        "score": 0.9997758269309998
+      }
+    ]
+  },
+  {
+    "headline": "FDI in the defence sector will require security clearances",
+    "source": "LiveMint",
+    "entities": []
+  },
+  {
+    "headline": "Jindal Aluminium increasing focus on defence, aerospace segments: MD",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "Jindal Aluminium",
+        "type": "ORG",
+        "score": 0.9956647753715515
+      },
+      {
+        "word": "MD",
+        "type": "ORG",
+        "score": 0.9197253584861755
+      }
+    ]
+  },
+  {
+    "headline": "Defence can aid India\u2019s manufacturing rise",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998151659965515
+      }
+    ]
+  },
+  {
+    "headline": "Investment invitations",
+    "source": "LiveMint",
+    "entities": []
+  },
+  {
+    "headline": "Purchase of 24 Seahawk helicopters a 'force multiplier': Indian Navy",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "Seahawk",
+        "type": "MISC",
+        "score": 0.9960243701934814
+      },
+      {
+        "word": "Indian Navy",
+        "type": "ORG",
+        "score": 0.9862951040267944
+      }
+    ]
+  },
+  {
+    "headline": "US approves sale of Integrated Air Defence Weapon System to India",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9987632036209106
+      },
+      {
+        "word": "Integrated",
+        "type": "MISC",
+        "score": 0.8647492527961731
+      },
+      {
+        "word": "Air Defence We",
+        "type": "ORG",
+        "score": 0.6821567416191101
+      },
+      {
+        "word": "##apon System",
+        "type": "MISC",
+        "score": 0.7725383043289185
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9997450709342957
+      }
+    ]
+  },
+  {
+    "headline": "India now exports defence products to 42 countries",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998096823692322
+      }
+    ]
+  },
+  {
+    "headline": "Rajnath holds talks with US Defence Secretary with focus on Indo-Pacific region",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "Rajnath",
+        "type": "PER",
+        "score": 0.9979132413864136
+      },
+      {
+        "word": "US",
+        "type": "MISC",
+        "score": 0.9621140360832214
+      },
+      {
+        "word": "Indo - Pacific",
+        "type": "LOC",
+        "score": 0.8893434405326843
+      }
+    ]
+  },
+  {
+    "headline": "Gold and Silver Data Pages",
+    "source": "LiveMint",
+    "entities": []
+  },
+  {
+    "headline": "From the House of Hindustan Times",
+    "source": "LiveMint",
+    "entities": [
+      {
+        "word": "House of Hindustan Times",
+        "type": "ORG",
+        "score": 0.947324275970459
+      }
+    ]
+  },
+  {
+    "headline": "indian defence Photos",
+    "source": "TOI",
+    "entities": []
+  },
+  {
+    "headline": "indian defence Videos",
+    "source": "TOI",
+    "entities": []
+  },
+  {
+    "headline": "India and UAE sign defence pacts, as Iran war tensions simmer",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998487234115601
+      },
+      {
+        "word": "UAE",
+        "type": "LOC",
+        "score": 0.9998227953910828
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.9998462200164795
+      }
+    ]
+  },
+  {
+    "headline": "Indian PM Modi meets Myanmar military gov\u2019t leader in New Delhi",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Indian",
+        "type": "MISC",
+        "score": 0.9996891021728516
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.999494194984436
+      },
+      {
+        "word": "##di",
+        "type": "PER",
+        "score": 0.963093638420105
+      },
+      {
+        "word": "Myanmar",
+        "type": "LOC",
+        "score": 0.9997970461845398
+      },
+      {
+        "word": "New Delhi",
+        "type": "LOC",
+        "score": 0.9995356202125549
+      }
+    ]
+  },
+  {
+    "headline": "As Trump woos China, the Quad grouping drifts towards irrelevance",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Trump",
+        "type": "PER",
+        "score": 0.9993647933006287
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9997897744178772
+      },
+      {
+        "word": "Quad",
+        "type": "ORG",
+        "score": 0.5654129385948181
+      }
+    ]
+  },
+  {
+    "headline": "Not just the US: India to Brazil, 51 nations armed Israel amid Gaza war",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.998753547668457
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998457431793213
+      },
+      {
+        "word": "Brazil",
+        "type": "LOC",
+        "score": 0.9998435974121094
+      },
+      {
+        "word": "Israel",
+        "type": "LOC",
+        "score": 0.9998619556427002
+      },
+      {
+        "word": "Gaza",
+        "type": "LOC",
+        "score": 0.9996935129165649
+      }
+    ]
+  },
+  {
+    "headline": "Canada chooses Swedish early warning planes rather than US model",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Canada",
+        "type": "LOC",
+        "score": 0.9997982382774353
+      },
+      {
+        "word": "Swedish",
+        "type": "MISC",
+        "score": 0.9997851252555847
+      },
+      {
+        "word": "US",
+        "type": "MISC",
+        "score": 0.7732069492340088
+      }
+    ]
+  },
+  {
+    "headline": "PM congratulates Major Abhilasha Barak for receiving UN Military Gender Advocate of the Year Award",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "A",
+        "type": "PER",
+        "score": 0.9996961355209351
+      },
+      {
+        "word": "##b",
+        "type": "PER",
+        "score": 0.993762195110321
+      },
+      {
+        "word": "##hilasha Barak",
+        "type": "PER",
+        "score": 0.9205714464187622
+      },
+      {
+        "word": "UN",
+        "type": "ORG",
+        "score": 0.6809356808662415
+      },
+      {
+        "word": "Military Gender Advocate of the Year",
+        "type": "MISC",
+        "score": 0.9017796516418457
+      }
+    ]
+  },
+  {
+    "headline": "India-Nordic summit: Why is Modi wooing Northern Europe?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.999455988407135
+      },
+      {
+        "word": "Nordic",
+        "type": "MISC",
+        "score": 0.9994897842407227
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.9989473223686218
+      },
+      {
+        "word": "##di",
+        "type": "PER",
+        "score": 0.9737537503242493
+      },
+      {
+        "word": "Northern Europe",
+        "type": "LOC",
+        "score": 0.8245454430580139
+      }
+    ]
+  },
+  {
+    "headline": "Marco Rubio visits India: What\u2019s at stake with Trump-Modi ties strained?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Marco Rubio",
+        "type": "PER",
+        "score": 0.9988600015640259
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998375177383423
+      },
+      {
+        "word": "Trump",
+        "type": "PER",
+        "score": 0.9947852492332458
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.9345306754112244
+      },
+      {
+        "word": "##di",
+        "type": "ORG",
+        "score": 0.1874997764825821
+      }
+    ]
+  },
+  {
+    "headline": "How Indian PM Modi\u2019s efforts to isolate Pakistan \u2018backfired\u2019",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Indian",
+        "type": "MISC",
+        "score": 0.9994511008262634
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.9994719624519348
+      },
+      {
+        "word": "##di",
+        "type": "PER",
+        "score": 0.9624242186546326
+      },
+      {
+        "word": "Pakistan",
+        "type": "LOC",
+        "score": 0.9998331069946289
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Prelims 2026 Polity Quiz (Week 162): MCQs on Chief of Defence Staff, Schedules of the Indian Constitution and more",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC Pre",
+        "type": "ORG",
+        "score": 0.9796595573425293
+      },
+      {
+        "word": "Polity",
+        "type": "ORG",
+        "score": 0.7958040237426758
+      },
+      {
+        "word": "Q",
+        "type": "MISC",
+        "score": 0.7991350889205933
+      },
+      {
+        "word": "Defence Staff",
+        "type": "ORG",
+        "score": 0.9962131977081299
+      },
+      {
+        "word": "Indian Constitution",
+        "type": "MISC",
+        "score": 0.9629333019256592
+      }
+    ]
+  },
+  {
+    "headline": "US-India strategic alliance, global influence: Marco Rubio",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9930675029754639
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.8727864623069763
+      },
+      {
+        "word": "Marco Rubi",
+        "type": "PER",
+        "score": 0.9966190457344055
+      }
+    ]
+  },
+  {
+    "headline": "Myanmar President to begin India visit tomorrow, discussions with PM Modi on strengthening ties on agenda",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "Myanmar",
+        "type": "LOC",
+        "score": 0.999783456325531
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9997772574424744
+      },
+      {
+        "word": "Mo",
+        "type": "PER",
+        "score": 0.9995018243789673
+      },
+      {
+        "word": "##di",
+        "type": "PER",
+        "score": 0.6781612634658813
+      }
+    ]
+  },
+  {
+    "headline": "Is the Great Nicobar Island India\u2019s Hormuz-like chokepoint against China?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Great Nicobar Island",
+        "type": "LOC",
+        "score": 0.9963679909706116
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.5933370590209961
+      },
+      {
+        "word": "Hormuz",
+        "type": "MISC",
+        "score": 0.8421354293823242
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9997921586036682
+      }
+    ]
+  },
+  {
+    "headline": "Nuclear risks rise as powers expand and modernise arsenals: SIPRI study",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "S",
+        "type": "ORG",
+        "score": 0.9965231418609619
+      },
+      {
+        "word": "##IPRI",
+        "type": "ORG",
+        "score": 0.9399362802505493
+      }
+    ]
+  },
+  {
+    "headline": "45% EPS CAGR, 29% ROE: What\u2019s driving Solar Industries\u2019 growth?",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "Solar Industries",
+        "type": "ORG",
+        "score": 0.9988462924957275
+      }
+    ]
+  },
+  {
+    "headline": "150th course of NDA: Army chief will be Reviewing Officer for Passing Out Parade",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "NDA",
+        "type": "ORG",
+        "score": 0.6966345310211182
+      },
+      {
+        "word": "Army",
+        "type": "ORG",
+        "score": 0.9901139736175537
+      },
+      {
+        "word": "Out Parade",
+        "type": "MISC",
+        "score": 0.5430686473846436
+      }
+    ]
+  },
+  {
+    "headline": "Knowledge Nugget: How EUV lithography and GaN technology are driving India\u2019s semiconductor push",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "EU",
+        "type": "MISC",
+        "score": 0.8843376636505127
+      },
+      {
+        "word": "G",
+        "type": "MISC",
+        "score": 0.600180983543396
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9997833371162415
+      }
+    ]
+  },
+  {
+    "headline": "Links 6/5/2026",
+    "source": "Nakedcapitalism.com",
+    "entities": []
+  },
+  {
+    "headline": "\u2018Iron brothers\u2019: How China and Pakistan built an unlikely 75-year bond",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Iron",
+        "type": "MISC",
+        "score": 0.577183723449707
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9998621940612793
+      },
+      {
+        "word": "Pakistan",
+        "type": "LOC",
+        "score": 0.9998624324798584
+      }
+    ]
+  },
+  {
+    "headline": "How have countries around the world responded to the US-Israel war on Iran?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "US",
+        "type": "MISC",
+        "score": 0.9970198273658752
+      },
+      {
+        "word": "Israel",
+        "type": "LOC",
+        "score": 0.9924278855323792
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.9998056292533875
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Essentials | Daily subject-wise quiz : Science and Technology MCQs on stealth technology, Dual Frequency Synthetic Aperture Radar and more (Week 165)",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC Essential",
+        "type": "ORG",
+        "score": 0.879627525806427
+      },
+      {
+        "word": "Science and Technology",
+        "type": "ORG",
+        "score": 0.8396669030189514
+      }
+    ]
+  },
+  {
+    "headline": "Interpreting Lavrov\u2019s Proposal That India Mediate Between Iran & The Gulf Kingdoms",
+    "source": "Nakedcapitalism.com",
+    "entities": [
+      {
+        "word": "Lavrov",
+        "type": "PER",
+        "score": 0.7687138915061951
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9916947484016418
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.999560534954071
+      },
+      {
+        "word": "Gulf Kingdoms",
+        "type": "LOC",
+        "score": 0.8811689615249634
+      }
+    ]
+  },
+  {
+    "headline": "Rubio says Iran deal could take days after US forces launch new attacks",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Rubio",
+        "type": "PER",
+        "score": 0.8174643516540527
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.9998193383216858
+      },
+      {
+        "word": "US",
+        "type": "MISC",
+        "score": 0.9892278909683228
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Key: Right to be forgotten, Codeine and Operation Hot Pursuit",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC",
+        "type": "ORG",
+        "score": 0.8920236825942993
+      },
+      {
+        "word": "Codeine",
+        "type": "MISC",
+        "score": 0.5779820680618286
+      },
+      {
+        "word": "Operation Hot Pursuit",
+        "type": "MISC",
+        "score": 0.9921212196350098
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Key: Western hoolock gibbons, Trump-Xi summit and Ebola outbreak",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC",
+        "type": "ORG",
+        "score": 0.9687406420707703
+      },
+      {
+        "word": "Western",
+        "type": "MISC",
+        "score": 0.9997325539588928
+      },
+      {
+        "word": "Trump",
+        "type": "MISC",
+        "score": 0.8097123503684998
+      },
+      {
+        "word": "Xi",
+        "type": "MISC",
+        "score": 0.5944962501525879
+      },
+      {
+        "word": "Ebola",
+        "type": "MISC",
+        "score": 0.8145670294761658
+      }
+    ]
+  },
+  {
+    "headline": "US strikes Iran again: What we know, and is the ceasefire over?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9971923232078552
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.9998125433921814
+      }
+    ]
+  },
+  {
+    "headline": "India seals BrahMos missile deal with Vietnam, eyes Indonesia next",
+    "source": "Post Magazine",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998291730880737
+      },
+      {
+        "word": "B",
+        "type": "ORG",
+        "score": 0.8693397641181946
+      },
+      {
+        "word": "##rah",
+        "type": "MISC",
+        "score": 0.6507624387741089
+      },
+      {
+        "word": "##Mos",
+        "type": "ORG",
+        "score": 0.8463656306266785
+      },
+      {
+        "word": "Vietnam",
+        "type": "LOC",
+        "score": 0.9998416900634766
+      },
+      {
+        "word": "Indonesia",
+        "type": "LOC",
+        "score": 0.9998334646224976
+      }
+    ]
+  },
+  {
+    "headline": "US, Iran have launched multiple attacks during ceasefire: A timeline",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9996720552444458
+      },
+      {
+        "word": "Iran",
+        "type": "LOC",
+        "score": 0.9998534917831421
+      }
+    ]
+  },
+  {
+    "headline": "Ancient tribes, military, trade and China's rise meet on this island",
+    "source": "ABC News (AU)",
+    "entities": [
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9998384714126587
+      }
+    ]
+  },
+  {
+    "headline": "India Strategic - March/April 2026",
+    "source": "Rlsbb.to",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9987816214561462
+      }
+    ]
+  },
+  {
+    "headline": "Links 5/18/2026",
+    "source": "Nakedcapitalism.com",
+    "entities": []
+  },
+  {
+    "headline": "The Missing Elephant: India\u2019s Silence on the US-Israel-Iran War",
+    "source": "Nakedcapitalism.com",
+    "entities": [
+      {
+        "word": "Elephant",
+        "type": "MISC",
+        "score": 0.8394054174423218
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9996861219406128
+      },
+      {
+        "word": "US",
+        "type": "MISC",
+        "score": 0.9562355875968933
+      },
+      {
+        "word": "Israel",
+        "type": "MISC",
+        "score": 0.9973142743110657
+      },
+      {
+        "word": "Iran War",
+        "type": "MISC",
+        "score": 0.9881582856178284
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Key: Rupee depreciation, Available realised equity and Road dust",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC",
+        "type": "ORG",
+        "score": 0.9721639156341553
+      }
+    ]
+  },
+  {
+    "headline": "Deadly protests in Pakistan-administered Kashmir: What\u2019s going on?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Pakistan",
+        "type": "MISC",
+        "score": 0.9984484910964966
+      },
+      {
+        "word": "Kashmir",
+        "type": "LOC",
+        "score": 0.9917839765548706
+      }
+    ]
+  },
+  {
+    "headline": "QUAD to build Fiji port: A new US-China flashpoint?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Fiji",
+        "type": "LOC",
+        "score": 0.9998546838760376
+      },
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.8224011659622192
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9905799031257629
+      }
+    ]
+  },
+  {
+    "headline": "India & Singapore explore new avenues to strengthen strategic ties during 16\u1d57\u02b0 Defence Policy Dialogue",
+    "source": "Globalsecurity.org",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9997376799583435
+      },
+      {
+        "word": "Singapore",
+        "type": "LOC",
+        "score": 0.9996355772018433
+      },
+      {
+        "word": "Defence",
+        "type": "ORG",
+        "score": 0.5327869653701782
+      },
+      {
+        "word": "Policy Dialogue",
+        "type": "MISC",
+        "score": 0.9860075116157532
+      }
+    ]
+  },
+  {
+    "headline": "Trump-Xi meeting: Could China, US form a \u2018G2\u2019?",
+    "source": "Al Jazeera English",
+    "entities": [
+      {
+        "word": "Trump",
+        "type": "MISC",
+        "score": 0.8843196034431458
+      },
+      {
+        "word": "Xi",
+        "type": "MISC",
+        "score": 0.9838072657585144
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9998445510864258
+      },
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9997478127479553
+      },
+      {
+        "word": "G",
+        "type": "MISC",
+        "score": 0.8202399015426636
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Prelims 2026 Revision Checklist: Top 25 places in news aspirants shouldn\u2019t miss",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC Pre",
+        "type": "ORG",
+        "score": 0.9737696647644043
+      }
+    ]
+  },
+  {
+    "headline": "C Raja Mohan writes | Japan\u2019s new military doctrine is about balancing Trump\u2019s America and Xi\u2019s China. There are lessons for India",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "C Raja Mohan",
+        "type": "PER",
+        "score": 0.9948639869689941
+      },
+      {
+        "word": "Japan",
+        "type": "LOC",
+        "score": 0.9998469352722168
+      },
+      {
+        "word": "Trump",
+        "type": "PER",
+        "score": 0.9927617907524109
+      },
+      {
+        "word": "America",
+        "type": "LOC",
+        "score": 0.9995070695877075
+      },
+      {
+        "word": "Xi",
+        "type": "PER",
+        "score": 0.8854855895042419
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9998002648353577
+      },
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9998151659965515
+      }
+    ]
+  },
+  {
+    "headline": "UPSC Key: Cockroach Janta Party, Bond yields, and Millets",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "UPSC",
+        "type": "ORG",
+        "score": 0.9932242035865784
+      },
+      {
+        "word": "Cockroach Janta Party",
+        "type": "ORG",
+        "score": 0.9916823506355286
+      },
+      {
+        "word": "Bond",
+        "type": "ORG",
+        "score": 0.6924039721488953
+      },
+      {
+        "word": "Mill",
+        "type": "ORG",
+        "score": 0.9103044271469116
+      }
+    ]
+  },
+  {
+    "headline": "Raksha Mantri holds bilateral talks with Minister of National Defence, Republic of Korea in Seoul",
+    "source": "Globalsecurity.org",
+    "entities": [
+      {
+        "word": "Ra",
+        "type": "PER",
+        "score": 0.9990000128746033
+      },
+      {
+        "word": "##ks",
+        "type": "PER",
+        "score": 0.9900631308555603
+      },
+      {
+        "word": "##ha Mantri",
+        "type": "PER",
+        "score": 0.836598813533783
+      },
+      {
+        "word": "National Defence",
+        "type": "ORG",
+        "score": 0.9773075580596924
+      },
+      {
+        "word": "Republic of Korea",
+        "type": "LOC",
+        "score": 0.9993211627006531
+      },
+      {
+        "word": "Seoul",
+        "type": "LOC",
+        "score": 0.9993957281112671
+      }
+    ]
+  },
+  {
+    "headline": "Stealth jets, subs, missiles: The sub-continental arms race you can\u2019t ignore",
+    "source": "RT",
+    "entities": []
+  },
+  {
+    "headline": "Links 5/25/2026",
+    "source": "Nakedcapitalism.com",
+    "entities": []
+  },
+  {
+    "headline": "Israel the lonely",
+    "source": "Www.nrc.nl",
+    "entities": [
+      {
+        "word": "Israel",
+        "type": "LOC",
+        "score": 0.9998542070388794
+      }
+    ]
+  },
+  {
+    "headline": "\u2018India is powerful, modernising its military\u2019: Hegseth at Shangri-La, even as US sounds \u2018alarm\u2019 on China",
+    "source": "The Indian Express",
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC",
+        "score": 0.9919074773788452
+      },
+      {
+        "word": "He",
+        "type": "PER",
+        "score": 0.9894774556159973
+      },
+      {
+        "word": "Shangri - La",
+        "type": "LOC",
+        "score": 0.9648175239562988
+      },
+      {
+        "word": "US",
+        "type": "LOC",
+        "score": 0.9994640946388245
+      },
+      {
+        "word": "China",
+        "type": "LOC",
+        "score": 0.9998031258583069
+      }
+    ]
+  },
+  {
+    "headline": "MULTILATERAL EXERCISE PRAGATI 2026 COMMENCES AT UMROI, MEGHALAYA",
+    "source": "Globalsecurity.org",
+    "entities": [
+      {
+        "word": "UMROI",
+        "type": "LOC",
+        "score": 0.8621246218681335
+      },
+      {
+        "word": "MEGHALAY",
+        "type": "LOC",
+        "score": 0.6732547283172607
+      }
+    ]
+  }
+]
