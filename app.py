@@ -1,6 +1,7 @@
 from flask import Flask, render_template,request
 import json
 import sqlite3
+from modules.m1_misinfo import analyze
 
 app = Flask(__name__)
 
@@ -30,6 +31,14 @@ def search():
         for r in rows
     ]
     return {"results": results}
+
+@app.route("/api/analyze")
+def api_analyze():
+    text = request.args.get("text", "")
+    if not text:
+        return {"error": "No text provided"}, 400
+    result = analyze(text)
+    return result
 
 
 if __name__ == "__main__":
