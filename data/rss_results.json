@@ -1,0 +1,2140 @@
+[
+  {
+    "title": "Israel launches fresh strikes on Lebanon despite Trump criticism",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c7vyn17g832o?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.6471781730651855,
+    "entities": [
+      {
+        "word": "Israel",
+        "type": "LOC"
+      },
+      {
+        "word": "Lebanon",
+        "type": "LOC"
+      },
+      {
+        "word": "Trump",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "UK investigating reports Russian warship fired warning shots near yacht in English Channel",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c20yzm84r7lo?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.800143301486969,
+    "entities": [
+      {
+        "word": "UK",
+        "type": "LOC"
+      },
+      {
+        "word": "Russian",
+        "type": "MISC"
+      },
+      {
+        "word": "English Channel",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Brazil convicts Jair Bolsonaro's son of pursuing US help in father's legal battle",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cgl3x0pey9lo?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.61508709192276,
+    "entities": [
+      {
+        "word": "Brazil",
+        "type": "LOC"
+      },
+      {
+        "word": "Jai",
+        "type": "PER"
+      },
+      {
+        "word": "##r Bolsonaro",
+        "type": "PER"
+      },
+      {
+        "word": "US",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Status quo at Jerusalem's holiest site under threat as Israeli nationalists flout rules",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cwy0nlv90jno?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.644830048084259,
+    "entities": [
+      {
+        "word": "Jerusalem",
+        "type": "LOC"
+      },
+      {
+        "word": "Israeli",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Russian artist and Putin critic shot dead in Poland",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/clyrzd5g6k2o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.712272584438324,
+    "entities": [
+      {
+        "word": "Russian",
+        "type": "MISC"
+      },
+      {
+        "word": "Putin",
+        "type": "PER"
+      },
+      {
+        "word": "Poland",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "'They came with machetes' - deadline looms for migrants to leave South Africa",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cg740l2jpr0o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.529330849647522,
+    "entities": [
+      {
+        "word": "South Africa",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Equatorial Guinea government resigns after failing to meet targets",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c4gy27dyq0ro?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.660541296005249,
+    "entities": [
+      {
+        "word": "Equatorial Guinea",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Australian shock jock wins A$12m payout after radio station tore up contract",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cyv0qmde97po?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.5012936592102051,
+    "entities": [
+      {
+        "word": "Australian",
+        "type": "MISC"
+      },
+      {
+        "word": "A",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "German broadcaster removes TV intro after Elon Musk takes legal action",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c0jyzp9z9deo?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.7941934466362,
+    "entities": [
+      {
+        "word": "German",
+        "type": "MISC"
+      },
+      {
+        "word": "Elon Musk",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Telegram challenges India ban over exam paper leak fears",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c4gy40q8wz0o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.917607843875885,
+    "entities": [
+      {
+        "word": "Telegram",
+        "type": "ORG"
+      },
+      {
+        "word": "India",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Group planned to attack White House UFC event using snipers and drones, FBI says",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cqx10xlje1lo?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.563561737537384,
+    "entities": [
+      {
+        "word": "White House",
+        "type": "LOC"
+      },
+      {
+        "word": "UFC",
+        "type": "MISC"
+      },
+      {
+        "word": "FBI",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Japan raids ice cream giants over price-fixing allegations",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c0ly0k88e61o?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.8461692929267883,
+    "entities": [
+      {
+        "word": "Japan",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Hundreds of cats stolen for food in Vietnam rescued by police, welfare group says",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c20yzm58vk3o?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.7513731718063354,
+    "entities": [
+      {
+        "word": "Vietnam",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "France's oldest female detainee, 79, goes on trial for in-law's grisly murder",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cy498llene1o?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.526829719543457,
+    "entities": [
+      {
+        "word": "France",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "India: Why a country of 1.4 billion is not in the football World Cup",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/ce95gvpn535o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5388830900192261,
+    "entities": [
+      {
+        "word": "India",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "The bikers battling extreme heat and armed conflict to smuggle Iranian fuel to Pakistan",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c621jr3yy09o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5630687475204468,
+    "entities": [
+      {
+        "word": "Iranian",
+        "type": "MISC"
+      },
+      {
+        "word": "Pakistan",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Tehran selling deal with US as victory \u2013 but for Iranians it was necessity",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cn4rwzxvl8ko?at_medium=RSS&at_campaign=rss",
+    "label": "false or exaggerated military claim",
+    "score": 0.6269338726997375,
+    "entities": [
+      {
+        "word": "Tehran",
+        "type": "LOC"
+      },
+      {
+        "word": "US",
+        "type": "LOC"
+      },
+      {
+        "word": "Iranian",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Three reasons ships are not going through the Strait of Hormuz yet",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/cn4rw784nj2o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.7875737547874451,
+    "entities": [
+      {
+        "word": "Strait of Hormuz",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "What one country's experiment says about attempts to boost birth rates",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/c5yzdr4ygdno?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.4622713327407837,
+    "entities": []
+  },
+  {
+    "title": "'Greatest feeling ever': Cape Verdeans tell BBC of joy at holding Spain to draw",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/articles/clyer09rd1ro?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.5751217007637024,
+    "entities": [
+      {
+        "word": "Cape Verdeans",
+        "type": "MISC"
+      },
+      {
+        "word": "BBC",
+        "type": "ORG"
+      },
+      {
+        "word": "Spain",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "'Warning fire went up': Couple on board yacht describe encounter with Russian warship",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/videos/cevldxgklxko?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.781394362449646,
+    "entities": [
+      {
+        "word": "Co",
+        "type": "PER"
+      },
+      {
+        "word": "##up",
+        "type": "PER"
+      },
+      {
+        "word": "##le",
+        "type": "PER"
+      },
+      {
+        "word": "Russian",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Drones create the first-ever Fifa scoreboard in Seattle sky",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/videos/ced4y9ljye9o?at_medium=RSS&at_campaign=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.6474277973175049,
+    "entities": [
+      {
+        "word": "Fifa",
+        "type": "ORG"
+      },
+      {
+        "word": "Seattle",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Watch: California wildfires rage near passing vehicles",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/videos/cn8q909jld2o?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.4987918436527252,
+    "entities": [
+      {
+        "word": "California",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Iranian-Americans protest against Iran team at World Cup",
+    "source": "BBC",
+    "link": "https://www.bbc.com/news/videos/cm20yglrgjlo?at_medium=RSS&at_campaign=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6249767541885376,
+    "entities": [
+      {
+        "word": "Iranian",
+        "type": "MISC"
+      },
+      {
+        "word": "Americans",
+        "type": "MISC"
+      },
+      {
+        "word": "Iran",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Why UK\u2019s Makerfield by-election matters far beyond one parliamentary seat",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/why-uks-makerfield-by-election-matters-far-beyond-one-parliamentary-seat?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.4645756483078003,
+    "entities": [
+      {
+        "word": "UK",
+        "type": "LOC"
+      },
+      {
+        "word": "Makerfield",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "UK\u2019s Starmer says Russian warship\u2019s warning shots in Channel \u2018reckless\u2019",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/uks-starmer-says-russian-warships-warning-shots-in-channel-reckless?traffic_source=rss",
+    "label": "false or exaggerated military claim",
+    "score": 0.4258285164833069,
+    "entities": [
+      {
+        "word": "UK",
+        "type": "LOC"
+      },
+      {
+        "word": "Star",
+        "type": "PER"
+      },
+      {
+        "word": "##mer",
+        "type": "ORG"
+      },
+      {
+        "word": "Russian",
+        "type": "MISC"
+      },
+      {
+        "word": "Channel \u2018",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Inside the \u2018unacceptable\u2019 UK fair selling property in Israeli settlements",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/unacceptable-london-property-fair?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.7006562948226929,
+    "entities": [
+      {
+        "word": "UK",
+        "type": "LOC"
+      },
+      {
+        "word": "Israeli",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "World Cup predictions: Portugal vs DR Congo, England vs Croatia and more",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/world-cup-predictions-portugal-vs-dr-congo-england-vs-croatia-and-more?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.602780818939209,
+    "entities": [
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      },
+      {
+        "word": "Portugal",
+        "type": "LOC"
+      },
+      {
+        "word": "DR Congo",
+        "type": "LOC"
+      },
+      {
+        "word": "England",
+        "type": "LOC"
+      },
+      {
+        "word": "Croatia",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Vietnam police rescue more than 400 cats from animal theft crime ring",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/vietnam-police-rescue-over-400-cats-from-illegal-meat-trade?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.9491519927978516,
+    "entities": [
+      {
+        "word": "Vietnam",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Iranian tankers exit US blockade zone before talks to end war",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/first-iranian-tankers-exit-us-blockade-zone-ahead-of-peace-talks?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.35972315073013306,
+    "entities": [
+      {
+        "word": "Iranian",
+        "type": "MISC"
+      },
+      {
+        "word": "US",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "G7 leaders to boost Ukraine air defences, tighten sanctions on Russia",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/g7-leaders-to-boost-ukraine-air-defences-tighten-sanctions-on-russia?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.5299981236457825,
+    "entities": [
+      {
+        "word": "Ukraine",
+        "type": "LOC"
+      },
+      {
+        "word": "Russia",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "US primaries in Oklahoma, Georgia, others: Key takeaways from the results",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/us-primaries-in-oklahoma-georgia-others-key-takeaways-from-the-results?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.5226421356201172,
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC"
+      },
+      {
+        "word": "Oklahoma",
+        "type": "LOC"
+      },
+      {
+        "word": "Georgia",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Dramatic rescue after plane crashes onto Texas highway",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/dramatic-rescue-after-plane-crashes-onto-texas-highway?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.5431516766548157,
+    "entities": [
+      {
+        "word": "Texas",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Oil prices continue slide amid hopes for peace, opening of Strait of Hormuz",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/economy/2026/6/17/oil-prices-continue-slide-amid-hopes-for-peace-opening-of-strait-of-hormuz?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.3946610689163208,
+    "entities": [
+      {
+        "word": "Strait of Hormuz",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Georgia Republican primary delivers mixed results for Trump",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/georgia-republican-primary-delivers-mixed-results-for-trump?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.4858747720718384,
+    "entities": [
+      {
+        "word": "Georgia",
+        "type": "LOC"
+      },
+      {
+        "word": "Republican",
+        "type": "MISC"
+      },
+      {
+        "word": "Trump",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Iran war day 110: Tehran says Israeli attacks on Lebanon threaten US deal",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/iran-war-day-110-tehran-says-israeli-attacks-on-lebanon-threaten-us-deal?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.44252076745033264,
+    "entities": [
+      {
+        "word": "Iran",
+        "type": "LOC"
+      },
+      {
+        "word": "Tehran",
+        "type": "LOC"
+      },
+      {
+        "word": "Israeli",
+        "type": "MISC"
+      },
+      {
+        "word": "Lebanon",
+        "type": "LOC"
+      },
+      {
+        "word": "US",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Arnautovic scores penalty as Austria beat World Cup debutants Jordan 3-1",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/sports/2026/6/17/austria-vs-jordan-fifa-world-cup-2026-marko-arnautovic-goal-penalty-football?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.7001317143440247,
+    "entities": [
+      {
+        "word": "A",
+        "type": "PER"
+      },
+      {
+        "word": "##rnautovic",
+        "type": "PER"
+      },
+      {
+        "word": "Austria",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      },
+      {
+        "word": "Jordan",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "England vs Croatia: World Cup \u2013 Kane, match prediction and how to watch",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/sports/2026/6/17/england-vs-croatia-world-cup-2026-prediction-kickoff-time-tv-listing-preview-kane-modric?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.8178707957267761,
+    "entities": [
+      {
+        "word": "England",
+        "type": "LOC"
+      },
+      {
+        "word": "Croatia",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      },
+      {
+        "word": "\u2013",
+        "type": "PER"
+      },
+      {
+        "word": "Kane",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Analysts predict no US petrol price drop until 2027",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/analysts-predict-no-us-petrol-price-drop-until-2027?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5986689925193787,
+    "entities": [
+      {
+        "word": "US",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Satellite images show 10 places where water is disappearing globally",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/news/2026/6/17/satellite-images-show-10-places-where-water-is-disappearing-globally?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5166637897491455,
+    "entities": []
+  },
+  {
+    "title": "How past \u2018terrorist\u2019 movements are often judged right by history",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/how-past-terrorist-movements-are-often-judged-right-by-history?traffic_source=rss",
+    "label": "false or exaggerated military claim",
+    "score": 0.44298243522644043,
+    "entities": []
+  },
+  {
+    "title": "UN chief blames global indifference for Haiti crisis",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/un-chief-blames-global-indifference-for-haiti-crisis?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.9218276739120483,
+    "entities": [
+      {
+        "word": "UN",
+        "type": "ORG"
+      },
+      {
+        "word": "Haiti",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Vozinha\u2019s mum celebrates hero keeper son from afar",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/vozinhas-mum-celebrates-hero-keeper-son-from-afar?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.44623860716819763,
+    "entities": [
+      {
+        "word": "V",
+        "type": "PER"
+      },
+      {
+        "word": "##ozin",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Food shortages spark scuffles outside supermarket in Bolivia",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/food-shortages-spark-scuffles-outside-supermarket-in-bolivia?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6066728830337524,
+    "entities": [
+      {
+        "word": "Bolivia",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Lionel Messi rewrites history books at record sixth World Cup",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/sports/2026/6/17/lionel-messi-rewrites-history-books-at-record-sixth-world-cup?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.6008330583572388,
+    "entities": [
+      {
+        "word": "Lionel Messi",
+        "type": "PER"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Trump administration seeks to halt air pollution lawsuit against Musk\u2019s xAI",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/economy/2026/6/17/trump-administration-seeks-to-halt-air-pollution-lawsuit-against-xai-data?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.8007791638374329,
+    "entities": [
+      {
+        "word": "Trump",
+        "type": "PER"
+      },
+      {
+        "word": "Musk",
+        "type": "ORG"
+      },
+      {
+        "word": "xA",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Russian drone strikes residential building in Ukraine",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/6/17/russian-drone-strikes-residential-building-in-ukraine?traffic_source=rss",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5147860050201416,
+    "entities": [
+      {
+        "word": "Russian",
+        "type": "MISC"
+      },
+      {
+        "word": "Ukraine",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Messi hat-trick fires holders Argentina to win over Algeria at World Cup",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/sports/2026/6/17/messi-fires-argentina-to-win-against-algeria-in-world-cup-defence-opener?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.7691845297813416,
+    "entities": [
+      {
+        "word": "Me",
+        "type": "PER"
+      },
+      {
+        "word": "##ssi",
+        "type": "PER"
+      },
+      {
+        "word": "Argentina",
+        "type": "LOC"
+      },
+      {
+        "word": "Algeria",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Haaland scores two goals as Norway beat Iraq 4-1 on World Cup return",
+    "source": "AlJazeera",
+    "link": "https://www.aljazeera.com/sports/2026/6/17/haaland-scores-two-goals-as-norway-beat-iraq-4-1-on-world-cup-return?traffic_source=rss",
+    "label": "verified defense news from official sources",
+    "score": 0.766710102558136,
+    "entities": [
+      {
+        "word": "Haaland",
+        "type": "PER"
+      },
+      {
+        "word": "Norway",
+        "type": "LOC"
+      },
+      {
+        "word": "Iraq",
+        "type": "LOC"
+      },
+      {
+        "word": "World Cup",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Karnataka police chief directs staff to strictly adhere to office timings",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/karnataka/karnataka-police-chief-directs-staff-to-strictly-adhere-to-office-timings/article71113169.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.9103608131408691,
+    "entities": [
+      {
+        "word": "Karnataka",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "SC says probe needed into \u2018serious\u2019 allegation of Registry misplacing case records",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/sc-says-probe-needed-into-serious-allegation-of-registry-misplacing-case-records/article71112646.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6775572896003723,
+    "entities": [
+      {
+        "word": "SC",
+        "type": "ORG"
+      },
+      {
+        "word": "Registry",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Maoist woman\u00a0with \u20b910-lakh bounty surrenders before Kolkata Police",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/kolkata/maoist-womanwith-10-lakh-bounty-surrenders-to-kolkata-police/article71112522.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7301725745201111,
+    "entities": [
+      {
+        "word": "Maoist",
+        "type": "MISC"
+      },
+      {
+        "word": "Kolkata Police",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Body of custodial torture victim Akash Delison taken for cremation following court order",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/body-of-custodial-torture-victim-akash-delison-taken-for-cremation-following-court-order/article71112119.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.6875431537628174,
+    "entities": [
+      {
+        "word": "A",
+        "type": "PER"
+      },
+      {
+        "word": "##kas",
+        "type": "PER"
+      },
+      {
+        "word": "##h Delison",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Eight arrested for bid to storm Falta police station, free TMC\u2019s Jahangir Khan; CM Suvendu vows stringent action",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/west-bengal/eight-arrested-for-bid-to-storm-falta-police-station-free-tmcs-jahangir-khan-cm-suvendu-vows-stringent-action/article71113146.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7456831932067871,
+    "entities": [
+      {
+        "word": "Falta",
+        "type": "LOC"
+      },
+      {
+        "word": "TMC",
+        "type": "ORG"
+      },
+      {
+        "word": "Jahangi",
+        "type": "PER"
+      },
+      {
+        "word": "##r Khan",
+        "type": "PER"
+      },
+      {
+        "word": "C",
+        "type": "PER"
+      },
+      {
+        "word": "Suvendu",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Bengaluru Development portfolio \u2014 the most coveted and contested",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/bangalore/bengaluru-development-portfolio-the-most-coveted-and-contested-dk-shivakumar-krishn-byre-gowda/article71108524.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5944534540176392,
+    "entities": [
+      {
+        "word": "Bengaluru Development",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Attack on Youth Congress activists: SIT approaches Kerala HC against anticipatory bail granted to accused police personnel",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/attack-on-youth-congress-activists-sit-approaches-kerala-hc-against-anticipatory-bail-granted-to-accused-police-personnel/article71113025.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.599827229976654,
+    "entities": [
+      {
+        "word": "Youth Congress",
+        "type": "ORG"
+      },
+      {
+        "word": "S",
+        "type": "ORG"
+      },
+      {
+        "word": "##IT",
+        "type": "ORG"
+      },
+      {
+        "word": "Kerala HC",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Hyderabad\u2019s Dhruva Space, Finland\u2019s ICEYE ink pact to collaborate on various fronts",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/Hyderabad/hyderabads-dhruva-space-finlands-iceye-ink-pact-to-collaborate-on-various-fronts/article71113067.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7636318802833557,
+    "entities": [
+      {
+        "word": "Hyderabad",
+        "type": "LOC"
+      },
+      {
+        "word": "Dhruva Space",
+        "type": "ORG"
+      },
+      {
+        "word": "Finland",
+        "type": "LOC"
+      },
+      {
+        "word": "ICEYE",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Posters for Rahul Gandhi's Kota event removed, locals pressured not to attend: Pilot",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/rajasthan/posters-for-rahul-gandhis-kota-event-removed-locals-pressured-not-to-attend-pilot/article71113257.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.8596821427345276,
+    "entities": [
+      {
+        "word": "Ra",
+        "type": "PER"
+      },
+      {
+        "word": "##hul Gandhi",
+        "type": "PER"
+      },
+      {
+        "word": "Kota",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Samajwadi Party thrashes U.P. Minister Rajbhar\u2019s claims on split in party",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/uttar-pradesh/akhilesh-yadav-responds-to-up-ministers-claims-on-major-split-in-samajwadi-party/article71112966.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.7048293352127075,
+    "entities": [
+      {
+        "word": "Samajwadi Party",
+        "type": "ORG"
+      },
+      {
+        "word": "U. P",
+        "type": "ORG"
+      },
+      {
+        "word": "Rajbhar",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Pollachi man sentenced to 10-year rigorous imprisonment for raping woman with mental disability",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/Coimbatore/pollachi-man-sentenced-to-10-year-rigorous-imprisonment-for-raping-woman-with-mental-disability/article71113149.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7152249813079834,
+    "entities": [
+      {
+        "word": "Poll",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Nicobarese tribal councils oppose draft poll rules, say traditional system aligns with democratic values",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/nicobarese-tribal-councils-oppose-draft-poll-rules-say-traditional-system-aligns-with-democratic-values/article71112988.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7037779688835144,
+    "entities": [
+      {
+        "word": "Nicobarese",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "V.D. Satheesan set to be the third Congress CM in Kerala to present Budget",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/vd-satheesan-set-to-be-the-third-congress-cm-in-kerala-to-present-budget/article71113214.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5085548162460327,
+    "entities": [
+      {
+        "word": "V",
+        "type": "PER"
+      },
+      {
+        "word": ". D. Satheesan",
+        "type": "PER"
+      },
+      {
+        "word": "Congress CM",
+        "type": "ORG"
+      },
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "Budget",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "BJP targets Rahul over Kota event ahead of NEET-UG re-test",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/bjp-targets-rahul-over-kota-event-ahead-of-neet-ug-re-test/article71112821.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6053814888000488,
+    "entities": [
+      {
+        "word": "BJP",
+        "type": "ORG"
+      },
+      {
+        "word": "Ra",
+        "type": "PER"
+      },
+      {
+        "word": "##hul",
+        "type": "PER"
+      },
+      {
+        "word": "Kota",
+        "type": "LOC"
+      },
+      {
+        "word": "NEET",
+        "type": "MISC"
+      },
+      {
+        "word": "UG",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "NEET-UG re-exam: Telegram app restricted in India at NTA request",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/neet-ug-re-exam-telegram-app-restricted-in-india-at-nta-request/article71107894.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6771009564399719,
+    "entities": [
+      {
+        "word": "U",
+        "type": "ORG"
+      },
+      {
+        "word": "Telegram",
+        "type": "ORG"
+      },
+      {
+        "word": "India",
+        "type": "LOC"
+      },
+      {
+        "word": "NTA",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Tesla plans Supercharger network in Hyderabad, bets on home charging to drive India\u2019s EV future",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/Hyderabad/tesla-plans-supercharger-network-in-hyderabad-bets-on-home-charging-to-drive-indias-ev-future/article71113118.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.6884483098983765,
+    "entities": [
+      {
+        "word": "Tesla",
+        "type": "ORG"
+      },
+      {
+        "word": "Super",
+        "type": "MISC"
+      },
+      {
+        "word": "Hyderabad",
+        "type": "LOC"
+      },
+      {
+        "word": "India",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Kerala govt did not allocate specific departments to any special government pleader, says CM V.D. Satheesan",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-govt-did-not-allocate-specific-departments-to-any-special-government-pleader-says-cm-vd-satheesan/article71112877.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.609883725643158,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "C",
+        "type": "PER"
+      },
+      {
+        "word": "V",
+        "type": "PER"
+      },
+      {
+        "word": "D. Satheesan",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "White Paper addresses adverse impact of \u2018revenue collapse\u2019 on people of Tamil Nadu",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/white-paper-addresses-adverse-impact-of-revenue-collapse-on-people-of-tamil-nadu/article71112827.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.8305898904800415,
+    "entities": [
+      {
+        "word": "White Paper",
+        "type": "ORG"
+      },
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Four ex-AIADMK MLAs facing disqualification proceedings submit replies to Tamil Nadu Speaker\u2019s notices",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/four-ex-aiadmk-mlas-facing-disqualification-proceedings-submit-replies-to-tamil-nadu-assembly-speakers-notices/article71112939.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5489285588264465,
+    "entities": [
+      {
+        "word": "AIADMK",
+        "type": "ORG"
+      },
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Cloudy skies, gusty winds over Visakhapatnam; IMD forecasts thunderstorms",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/cloudy-skies-gusty-winds-over-visakhapatnam-imd-forecasts-thunderstorms/article71112989.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5507470369338989,
+    "entities": [
+      {
+        "word": "Visakhapatnam",
+        "type": "LOC"
+      },
+      {
+        "word": "IMD",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Practise yoga daily for a healthy life, Nandyal Collector and SP tell residents",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/practise-yoga-daily-for-a-healthy-life-nandyal-collector-and-sp-tell-residents/article71112692.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.9749664664268494,
+    "entities": [
+      {
+        "word": "Nan",
+        "type": "LOC"
+      },
+      {
+        "word": "SP",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Bharathiraja, ace film director, passes away",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/entertainment/movies/ace-tamil-film-director-bharathiraja-passes-away-june-10-2026/article71083344.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5580748915672302,
+    "entities": [
+      {
+        "word": "B",
+        "type": "PER"
+      },
+      {
+        "word": "##harathiraja",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Strong heroines, mellow heroes, engaging stories and fierce social commentary define Bharathiraja\u2019s repertoire",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/entertainment/movies/strong-heroines-mellow-heroes-engaging-stories-and-fierce-social-commentary-define-bharathirajas-repertoire/article71085136.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5129902362823486,
+    "entities": [
+      {
+        "word": "B",
+        "type": "PER"
+      },
+      {
+        "word": "##hara",
+        "type": "MISC"
+      },
+      {
+        "word": "##thiraj",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Kerala rains: IMD issues orange alert for Kozhikode, yellow alert in six districts",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-rains-imd-issues-orange-alert-for-kozhikode-yellow-alert-in-six-districts/article71112847.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7940822839736938,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "IMD",
+        "type": "ORG"
+      },
+      {
+        "word": "Kozhikode",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Eknath Shinde, Shrikant Shinde in Delhi amid \u2018Operation Tiger\u2019 buzz",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/maharashtra/eknath-shinde-shrikant-shinde-in-delhi-amid-operation-tiger-buzz/article71112810.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6280192136764526,
+    "entities": [
+      {
+        "word": "E",
+        "type": "PER"
+      },
+      {
+        "word": "##knath Shinde",
+        "type": "PER"
+      },
+      {
+        "word": "Shrikan",
+        "type": "PER"
+      },
+      {
+        "word": "##t Shinde",
+        "type": "PER"
+      },
+      {
+        "word": "Delhi",
+        "type": "LOC"
+      },
+      {
+        "word": "Operation Tiger",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "The best mangoes in South India, according to farmers who grow them",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/food/dining/the-best-mangoes-in-south-india-according-to-farmers-who-grow-them/article71079438.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.4420592486858368,
+    "entities": [
+      {
+        "word": "South India",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "BJP won\u2019t succeed in its ultimate objective, says Congress amid Shiv Sena (UBT) developments",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/maharashtra/bjp-wont-succeed-in-its-ultimate-objective-says-congress-amid-shiv-sena-ubt-developments/article71112579.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.5420163869857788,
+    "entities": [
+      {
+        "word": "BJP",
+        "type": "ORG"
+      },
+      {
+        "word": "Congress",
+        "type": "ORG"
+      },
+      {
+        "word": "Shiv Sena",
+        "type": "ORG"
+      },
+      {
+        "word": "UBT",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "\u2018Operation Tiger\u2019: Shiv Sena (UBT) claims \u20b950 crores offer to MPs,\u00a0unsure of their whereabouts",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/maharashtra/operation-tiger-buzz-shiv-sena-ubt-mpswhereabouts-sanjay-raut/article71112435.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.9332073926925659,
+    "entities": [
+      {
+        "word": "Operation Tiger",
+        "type": "MISC"
+      },
+      {
+        "word": "Shi",
+        "type": "PER"
+      },
+      {
+        "word": "##v Sena",
+        "type": "PER"
+      },
+      {
+        "word": "UBT",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "IIT-Delhi study finds human activity drives India\u2019s \u2018wild\u2019 weather",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/sci-tech/science/iit-delhi-study-finds-human-activity-drives-india-wild-weather/article71100938.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7168551087379456,
+    "entities": [
+      {
+        "word": "IIT",
+        "type": "ORG"
+      },
+      {
+        "word": "Delhi",
+        "type": "LOC"
+      },
+      {
+        "word": "India",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Delivery executive arrested for strangulating live-in partner in Bengaluru",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/bangalore/delivery-executive-arrested-for-strangulating-live-in-partner-in-bengaluru/article66271592.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5365820527076721,
+    "entities": [
+      {
+        "word": "Bengaluru",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Bengaluru murder: Woman strangled to death by live-in partner in Malleswaram",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/bangalore/bengaluru-murder-woman-strangled-to-death-by-live-in-partner-in-malleswaram/article71112784.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.6861341595649719,
+    "entities": [
+      {
+        "word": "Bengaluru",
+        "type": "LOC"
+      },
+      {
+        "word": "Malleswaram",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Bengaluru woman murdered by husband, even as friend slept next to her",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/karnataka/woman-murdered-by-husband-even-as-friend-slept-next-to-her/article68578298.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.39649534225463867,
+    "entities": [
+      {
+        "word": "Bengaluru",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Man ends life after killing live-in partner in Bengaluru",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/bangalore/man-ends-life-after-killing-live-in-partner-in-bengaluru/article70349104.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.35943377017974854,
+    "entities": [
+      {
+        "word": "Bengaluru",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "TVK\u00a0government\u2019s White Paper puts\u00a0Tamil Nadu\u2019s debt at \u20b913.18\u00a0lakh\u00a0crore",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/tvkgovernments-white-paper-putstamil-nadus-debt-at-1318lakhcrore/article71109675.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.8728410005569458,
+    "entities": [
+      {
+        "word": "TVK",
+        "type": "ORG"
+      },
+      {
+        "word": "White Paper",
+        "type": "ORG"
+      },
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Ready to quit MLA post if TVK govt. reduces Tamil Nadu\u2019s annual borrowing: ex-Finance Minister Thangam Thennarasu",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/ready-to-quit-mla-post-if-tvk-government-reduces-annual-borrowing-ex-finance-minister-thangam-thennarasu/article71112856.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5397849678993225,
+    "entities": [
+      {
+        "word": "TVK",
+        "type": "ORG"
+      },
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      },
+      {
+        "word": "Thangam Thennaras",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "12 final-year BDS students of Hyderabad college suspended for six months over ragging allegations",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/telangana/12-final-year-bds-students-suspended-for-six-months-over-ragging-allegations/article71112765.ece",
+    "label": "false or exaggerated military claim",
+    "score": 0.38863712549209595,
+    "entities": [
+      {
+        "word": "BDS",
+        "type": "ORG"
+      },
+      {
+        "word": "Hyderabad",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Kerala govt\u2019s White Paper on fiscal health seeks revamp of loss-making public sector enterprises",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-govts-white-paper-on-fiscal-health-seeks-revamp-of-loss-making-public-sector-enterprises/article71060340.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7995654940605164,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "White Paper",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Tamil Nadu\u2019s own-tax effort has \u2018collapsed\u2019, says White Paper",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/public-finance-states-own-tax-revenue-public-debt-tamil-nadu-maharashtra-karnataka-gujarat-gst/article71110367.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7949191927909851,
+    "entities": [
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      },
+      {
+        "word": "White Paper",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Former minister K.S. Eshwarappa criticises Karnataka Minister Priyank Kharge for RSS queries",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/karnataka/former-minister-k-s-eshwarappa-criticises-karnataka-minister-priyank-kharge-for-rss-queries/article71112442.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.4876452088356018,
+    "entities": [
+      {
+        "word": "K",
+        "type": "PER"
+      },
+      {
+        "word": ". S. Eshwarappa",
+        "type": "PER"
+      },
+      {
+        "word": "Karnataka",
+        "type": "LOC"
+      },
+      {
+        "word": "P",
+        "type": "PER"
+      },
+      {
+        "word": "##riyank Kharge",
+        "type": "PER"
+      },
+      {
+        "word": "RSS",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "T. Veena, daughter of ex-Kerala CM Pinarayi Vijayan, appears before ED for questioning in CMRL pay-off case",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/t-veena-daughter-of-ex-kerala-cm-pinarayi-vijayan-appears-before-ed-for-questioning-in-cmrl-pay-off-case/article71112158.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5579421520233154,
+    "entities": [
+      {
+        "word": "T",
+        "type": "PER"
+      },
+      {
+        "word": ". Veena",
+        "type": "PER"
+      },
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "Pinarayi Vijayan",
+        "type": "PER"
+      },
+      {
+        "word": "ED",
+        "type": "ORG"
+      },
+      {
+        "word": "C",
+        "type": "ORG"
+      },
+      {
+        "word": "##MRL",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "CMRL pay-off case involving ex-Kerala CM Pinarayi Vijayan\u2019s daughter T. Veena | Explained",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/cmrl-pay-off-case-involving-ex-kerala-cm-pinarayi-vijayans-daughter-t-veena-explained/article71112793.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.547027587890625,
+    "entities": [
+      {
+        "word": "CMRL",
+        "type": "ORG"
+      },
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "Pinarayi Vijayan",
+        "type": "PER"
+      },
+      {
+        "word": "T",
+        "type": "PER"
+      },
+      {
+        "word": "Veena",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "How everyday Kerala is being reimagined in an award-nominated illustration series",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/society/how-everyday-kerala-is-being-reimagined-in-an-award-nominated-illustration-series/article71107830.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.4604297876358032,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Tamil Nadu\u2019s consumption of petrol, diesel reaching point of stagnation: White Paper",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/petrol-diesel-petroleum-products-petroleum-consumption-energy-tamil-nadu/article71112716.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5888506770133972,
+    "entities": [
+      {
+        "word": "Tamil Nadu",
+        "type": "LOC"
+      },
+      {
+        "word": "White Paper",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "TMC\u2019s Saugata Roy writes to Home Minister Amit Shah over \u2018egg attacks\u2019 against party leaders",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/west-bengal/tmcs-saugata-roy-writes-to-home-minister-amit-shah-over-egg-attacks-against-party-leaders/article71112402.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.38255852460861206,
+    "entities": [
+      {
+        "word": "TMC",
+        "type": "ORG"
+      },
+      {
+        "word": "Sa",
+        "type": "PER"
+      },
+      {
+        "word": "##uga",
+        "type": "PER"
+      },
+      {
+        "word": "##ta Roy",
+        "type": "PER"
+      },
+      {
+        "word": "Am",
+        "type": "PER"
+      },
+      {
+        "word": "##it Shah",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "Kerala Budget: Fiscal health, welfare, growth in focus as Congress-led UDF govt to present Revised Budget on June 19",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-budget-fiscal-health-welfare-growth-in-focus-as-congress-led-udf-govt-to-present-revised-budget-on-june-19/article71112603.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.743323028087616,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "Congress",
+        "type": "MISC"
+      },
+      {
+        "word": "UDF",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Chennai Metrowater promises permanent piped water supply to Thiru.Vi.Ka Nagar residents",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/chennai/chennai-metrowater-promises-permanent-piped-water-supply-to-thiruvika-nagar-residents/article71097809.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.820688009262085,
+    "entities": [
+      {
+        "word": "Chennai Metrowater",
+        "type": "ORG"
+      },
+      {
+        "word": "T",
+        "type": "LOC"
+      },
+      {
+        "word": "##hir",
+        "type": "LOC"
+      },
+      {
+        "word": "Vi",
+        "type": "LOC"
+      },
+      {
+        "word": "Ka Nagar",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "CM inaugurates Telangana Public School in Rangareddy",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/telangana/telangana-cm-inaugurates-telangana-public-school-in-rangareddy-district/article71112507.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.9445462822914124,
+    "entities": [
+      {
+        "word": "CM",
+        "type": "ORG"
+      },
+      {
+        "word": "Telangana Public School",
+        "type": "ORG"
+      },
+      {
+        "word": "Rangareddy",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Telegram challenges Centre\u2019s order that temporarily blocks its use",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/sci-tech/technology/telegram-challenges-centres-order-that-temporarily-blocks-its-use/article71112636.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.6621756553649902,
+    "entities": [
+      {
+        "word": "Telegram",
+        "type": "ORG"
+      },
+      {
+        "word": "Centre",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "RSS alleges petrol bomb attack at its Ranchi office",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/jharkhand/rss-alleges-petrol-bomb-attack-at-its-ranchi-office/article71112471.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.7714747786521912,
+    "entities": [
+      {
+        "word": "RSS",
+        "type": "ORG"
+      },
+      {
+        "word": "Ranchi",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Nedumangadu child murder case: Kerala HC registers suo motu petition to probe child abuse, welfare system failures",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/nedumangadu-child-murder-case-kerala-hc-registers-suo-motu-petition-to-probe-child-abuse-welfare-system-failures/article71112469.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.8646347522735596,
+    "entities": [
+      {
+        "word": "Nedumangadu",
+        "type": "LOC"
+      },
+      {
+        "word": "Kerala HC",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "CM\u2019s breakfast scheme to be extended till Class VIII from September 17",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/tamil-nadu/cms-breakfast-scheme-to-be-expanded-to-classes-vi-to-viii-on-september-17/article71109621.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.46879273653030396,
+    "entities": [
+      {
+        "word": "CM",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Inside Mangav, a unique Maharashtra village for abandoned women and their children",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/life-and-style/inside-mangav-a-unique-maharashtra-village-for-abandoned-women-and-their-children/article71075786.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.5284224152565002,
+    "entities": [
+      {
+        "word": "Mangav",
+        "type": "LOC"
+      },
+      {
+        "word": "Maharashtra",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Fire breaks out at private children\u2019s hospital in Vijayawada; all patients safe",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/cities/Vijayawada/fire-breaks-out-at-private-childrens-hospital-in-vijayawada-all-patients-safe/article71112497.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.4790111482143402,
+    "entities": [
+      {
+        "word": "Vijayawada",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Kerala Cabinet forms sub-committee to study PM SHRI implementation; CM says \u2018forced to\u2019 continue with scheme",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/kerala/kerala-cabinet-forms-sub-committee-to-study-pm-shri-implementation-cm-says-forced-to-continue-with-scheme/article71112525.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.7105805277824402,
+    "entities": [
+      {
+        "word": "Kerala",
+        "type": "LOC"
+      },
+      {
+        "word": "SH",
+        "type": "ORG"
+      },
+      {
+        "word": "CM",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Ahead of Legislative Council polls, Congress to hold mock voting training for its legislators at a resort",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/karnataka/ahead-of-legislative-council-polls-congress-to-hold-mock-voting-training-for-its-legislators-at-a-resort/article71110303.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.8122671842575073,
+    "entities": [
+      {
+        "word": "Legislative Council",
+        "type": "ORG"
+      },
+      {
+        "word": "Congress",
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "title": "Lokesh, Pemmasani lay foundation for \u20b9142-crore Nidamarru railway overbridge in Mangalagiri",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/andhra-pradesh/lokesh-pemmasani-lay-foundation-for-142-crore-nidamarru-railway-overbridge-in-mangalagiri/article71112113.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.9246251583099365,
+    "entities": [
+      {
+        "word": "Lokesh",
+        "type": "PER"
+      },
+      {
+        "word": "P",
+        "type": "PER"
+      },
+      {
+        "word": "##emmas",
+        "type": "PER"
+      },
+      {
+        "word": "Nidamarru",
+        "type": "LOC"
+      },
+      {
+        "word": "Mangalagiri",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "Abrogation of Article 370 was the biggest policy mistake by the government: Omar Abdullah",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/the-huddle/the-hindu-huddle-2026-omar-abdullah-session/article71064526.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.4825018346309662,
+    "entities": [
+      {
+        "word": "Article 370",
+        "type": "MISC"
+      },
+      {
+        "word": "Omar Abdullah",
+        "type": "PER"
+      }
+    ]
+  },
+  {
+    "title": "West Bengal CM launches cleanliness drive at Hooghly river ghat; stresses on 'Namami Gange' initiative",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-launches-cleanliness-drive-at-hooghly-river-ghat-stresses-on-namami-gange-initiative/article71112304.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.9023060202598572,
+    "entities": [
+      {
+        "word": "West Bengal",
+        "type": "ORG"
+      },
+      {
+        "word": "CM",
+        "type": "ORG"
+      },
+      {
+        "word": "Hooghly",
+        "type": "LOC"
+      },
+      {
+        "word": "Nam",
+        "type": "PER"
+      },
+      {
+        "word": "##ami Gang",
+        "type": "MISC"
+      }
+    ]
+  },
+  {
+    "title": "Bus crashes into truck on highway in Vadodara, killing six, leaving 20 injured",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/gujarat/bus-crashes-into-truck-on-highway-in-vadodara-killing-six-leaving-20-injured/article71112348.ece",
+    "label": "unconfirmed or suspicious defense report",
+    "score": 0.38679930567741394,
+    "entities": [
+      {
+        "word": "Vadodara",
+        "type": "LOC"
+      }
+    ]
+  },
+  {
+    "title": "BJP govt. in State will be of nationalists, says CM Suvendu during maiden visit to north Bengal",
+    "source": "TheHindu",
+    "link": "https://www.thehindu.com/news/national/west-bengal/cm-suvendu-begins-first-north-bengal-tour-promises-to-fulfill-regions-developmental-aspirations/article71001216.ece",
+    "label": "verified defense news from official sources",
+    "score": 0.6317170858383179,
+    "entities": [
+      {
+        "word": "BJP",
+        "type": "ORG"
+      },
+      {
+        "word": "C",
+        "type": "PER"
+      },
+      {
+        "word": "Suvendu",
+        "type": "PER"
+      },
+      {
+        "word": "Bengal",
+        "type": "LOC"
+      }
+    ]
+  }
+]
