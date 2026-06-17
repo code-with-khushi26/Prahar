@@ -1,15 +1,15 @@
 import feedparser
-from transformers import pipeline
+from transformers import pipeline, DistilBertForSequenceClassification, DistilBertTokenizer
+import torch
 
-FEEDS = {
-    "BBC": "http://feeds.bbci.co.uk/news/world/rss.xml",
-    "AlJazeera": "https://www.aljazeera.com/xml/rss/all.xml",
-    "TheHindu": "https://www.thehindu.com/news/national/feeder/default.rss",
-}
+# Load fine-tuned model
+model_path = "models/m1_misinfo"
+tokenizer = DistilBertTokenizer.from_pretrained(model_path)
+ft_model = DistilBertForSequenceClassification.from_pretrained(model_path)
+ft_pipeline = pipeline("text-classification", model=ft_model, tokenizer=tokenizer)
 
-# Load models once when module is imported
-ner = pipeline("ner", model="dslim/bert-base-NER", aggregation_strategy="simple")
-classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+# Zero-shot classifier (base model)
+zero_shot = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
 LABELS = [
     "verified defense news from official sources",
@@ -17,17 +17,31 @@ LABELS = [
     "unconfirmed or suspicious defense report"
 ]
 
+FEEDS = {
+    "BBC": "http://feeds.bbci.co.uk/news/world/rss.xml",
+    "AlJazeera": "https://www.aljazeera.com/xml/rss/all.xml",
+    "TheHindu": "https://www.thehindu.com/news/national/feeder/default.rss",
+}
+
 def analyze(text):
-    entities = ner(text)
-    clf = classifier(text, candidate_labels=LABELS)
+    # Fine-tuned model result
+    ft_result = ft_pipeline(text)[0]
+    ft_label = "REAL" if ft_result["label"] == "LABEL_1" else "FAKE"
+    
+    # Zero-shot result
+    zs_result = zero_shot(text, candidate_labels=LABELS)
+    zs_label = zs_result["labels"][0]
+
     return {
         "text": text,
-        "label": clf["labels"][0],
-        "score": float(clf["scores"][0]),
-        "entities": [
-            {"word": e["word"], "type": e["entity_group"]}
-            for e in entities
-        ]
+        "finetuned": {
+            "label": ft_label,
+            "score": round(ft_result["score"], 3)
+        },
+        "zeroshot": {
+            "label": zs_label,
+            "score": round(zs_result["scores"][0], 3)
+        }
     }
 
 def fetch_headlines():
