@@ -4,23 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRAHAR</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; background: #0d1117; color: white; }
+        h1 { color: #00ff88; }
+        h2 { color: #00aaff; margin-top: 40px; }
+        input, button { padding: 10px; font-size: 14px; }
+        input[type="text"] { width: 400px; }
+        button { background: #00ff88; border: none; cursor: pointer; font-weight: bold; }
+
+        .result-card { margin-top: 20px; padding: 20px; border-radius: 8px; max-width: 600px; }
+        .REAL { background: #1a3a2a; border: 2px solid #00ff88; }
+        .FAKE { background: #3a1a1a; border: 2px solid #ff3b3b; }
+        .badge { padding: 5px 15px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+        .badge-REAL { background: #00ff88; color: black; }
+        .badge-FAKE { background: #ff3b3b; color: white; }
+        .entity { display: inline-block; padding: 3px 10px; margin: 3px; border-radius: 4px; font-size: 12px; }
+        .LOC { background: #1a3a5a; border: 1px solid #00aaff; }
+        .ORG { background: #3a2a5a; border: 1px solid #aa00ff; }
+        .PER { background: #3a3a1a; border: 1px solid #ffaa00; }
+        .MISC { background: #2a3a2a; border: 1px solid #00aa55; }
+
+        /* Audio section */
+        .audio-section { margin-top: 40px; max-width: 600px; }
+        .confidence-bar-bg { background: #1a2a1a; border-radius: 4px; height: 20px; margin: 5px 0; }
+        .confidence-bar { height: 20px; border-radius: 4px; background: #00ff88; transition: width 0.4s; }
+        .audio-result { margin-top: 20px; padding: 20px; background: #0d1a0d; border: 1px solid #1e3040; border-radius: 8px; }
+        .predicted-label { font-size: 1.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-    <h1>PRAHAR Dashboard</h1>
-    
-    <div>
-        <input type="text" id="headline-input" placeholder="Enter a defense headline..." style="width: 400px; padding: 8px;">
-        <button onclick="analyzeHeadline()">Analyze</button>
-    </div>
+    <h1>⬡ PRAHAR Dashboard</h1>
+    <p style="color: #5a7a8a;">Predictive Reconnaissance & AI-based Hazard Analysis</p>
 
+    <!-- M1 Section -->
+    <h2>M1 — Misinfo Radar</h2>
+    <div>
+        <input type="text" id="headline-input" placeholder="Enter a defense headline..." />
+        <button onclick="analyzeHeadline()">ANALYZE</button>
+    </div>
     <div id="result"></div>
 
+    <!-- M3 Section -->
+    <h2>M3 — AcousticID</h2>
+    <div class="audio-section">
+        <input type="file" id="audio-input" accept=".mp3,.wav" />
+        <button onclick="analyzeAudio()">CLASSIFY AUDIO</button>
+        <div id="audio-result"></div>
+    </div>
+
     <script>
+        // M1 - Headline Analysis
         async function analyzeHeadline() {
             const text = document.getElementById('headline-input').value;
+            if (!text) return;
+            document.getElementById('result').innerHTML = '<p style="color:#5a7a8a">Analyzing...</p>';
             const res = await fetch(`/api/analyze?text=${encodeURIComponent(text)}`);
             const data = await res.json();
-            document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+            const label = data.finetuned.label;
+            const score = (data.finetuned.score * 100).toFixed(1);
+            const entities = data.entities;
+            let entitiesHTML = entities.map(e =>
+                `<span class="entity ${e.type}">${e.word} <small>${e.type}</small></span>`
+            ).join('');
+            document.getElementById('result').innerHTML = `
+                <div class="result-card ${label}">
+                    <span class="badge badge-${label}">${label}</span>
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">${score}% confidence</div>
+                    <div style="color: #aaa; margin-bottom: 15px;">${text}</div>
+                    <div><strong>Entities:</strong><br/>${entitiesHTML || 'None'}</div>
+                    <div style="margin-top: 15px; font-size: 12px; color: #5a7a8a;">
+                        Zero-shot: ${data.zeroshot.label} (${(data.zeroshot.score * 100).toFixed(1)}%)
+                    </div>
+                </div>
+            `;
+        }
+
+        document.getElementById('headline-input').addEventListener('keydown', e => {
+            if (e.key === 'Enter') analyzeHeadline();
+        });
+
+        // M3 - Audio Classification
+        async function analyzeAudio() {
+            const fileInput = document.getElementById('audio-input');
+            if (!fileInput.files[0]) {
+                alert('Please select an audio file first!');
+                return;
+            }
+
+            document.getElementById('audio-result').innerHTML = '<p style="color:#5a7a8a">Classifying audio...</p>';
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            const res = await fetch('/api/audio', { method: 'POST', body: formData });
+            const data = await res.json();
+
+            const scores = data.all_scores;
+            const barsHTML = Object.entries(scores).map(([cat, score]) => `
+                <div style="margin: 8px 0;">
+                    <div style="display:flex; justify-content:space-between;">
+                        <span>${cat.toUpperCase()}</span>
+                        <span>${score}%</span>
+                    </div>
+                    <div class="confidence-bar-bg">
+                        <div class="confidence-bar" style="width:${score}%"></div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('audio-result').innerHTML = `
+                <div class="audio-result">
+                    <div class="predicted-label">🔊 ${data.predicted_class.toUpperCase()}</div>
+                    <div style="color:#aaa; margin-bottom:15px;">Confidence: ${data.confidence}%</div>
+                    ${barsHTML}
+                </div>
+            `;
         }
     </script>
 </body>

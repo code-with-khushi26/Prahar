@@ -8,7 +8,10 @@ tokenizer = DistilBertTokenizer.from_pretrained(model_path)
 ft_model = DistilBertForSequenceClassification.from_pretrained(model_path)
 ft_pipeline = pipeline("text-classification", model=ft_model, tokenizer=tokenizer)
 
-# Zero-shot classifier (base model)
+# NER
+ner = pipeline("ner", model="dslim/bert-base-NER", aggregation_strategy="simple")
+
+# Zero-shot classifier
 zero_shot = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
 LABELS = [
@@ -24,13 +27,13 @@ FEEDS = {
 }
 
 def analyze(text):
-    # Fine-tuned model result
     ft_result = ft_pipeline(text)[0]
     ft_label = "REAL" if ft_result["label"] == "LABEL_1" else "FAKE"
-    
-    # Zero-shot result
+
     zs_result = zero_shot(text, candidate_labels=LABELS)
     zs_label = zs_result["labels"][0]
+
+    entities = ner(text)
 
     return {
         "text": text,
@@ -41,7 +44,11 @@ def analyze(text):
         "zeroshot": {
             "label": zs_label,
             "score": round(zs_result["scores"][0], 3)
-        }
+        },
+        "entities": [
+            {"word": e["word"], "type": e["entity_group"]}
+            for e in entities
+        ]
     }
 
 def fetch_headlines():
