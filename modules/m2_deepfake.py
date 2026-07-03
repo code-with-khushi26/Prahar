@@ -46,3 +46,43 @@ def predict_deepfake(image_path):
         "real_score": round(probs[0][0].item() * 100, 2),
         "fake_score": round(probs[0][1].item() * 100, 2)
     }
+
+def analyze_video(video_path):
+    cap = cv2.VideoCapture(video_path)
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    
+    frame_count = 0
+    all_scores = []
+    
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret:
+            break
+        if frame_count % 30 == 0:
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
+            if len(faces) > 0:
+                x, y, w, h = faces[0]
+                face_img = Image.fromarray(cv2.cvtColor(frame[y:y+h, x:x+w], cv2.COLOR_BGR2RGB))
+            else:
+                face_img = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+            tensor = transform(face_img).unsqueeze(0)
+            with torch.no_grad():
+                output = model(tensor)
+                probs = torch.softmax(output, dim=1)
+                all_scores.append(probs[0][1].item() * 100)
+        frame_count += 1
+    
+    cap.release()
+    
+    avg_fake = float(np.mean(all_scores)) if all_scores else 50.0
+    avg_real = 100 - avg_fake
+    
+    return {
+        "frames_processed": len(all_scores),
+        "avg_real": round(avg_real, 2),
+        "avg_fake": round(avg_fake, 2),
+        "final_label": "FAKE" if avg_fake > 50 else "REAL"
+    }
