@@ -31,6 +31,7 @@
         .audio-result { margin-top: 20px; padding: 20px; background: #0d1a0d; border: 1px solid #1e3040; border-radius: 8px; }
         .predicted-label { font-size: 1.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px; }
     </style>
+   <script src="/static/js/chart.min.js"></script>
 </head>
 <body>
     <h1>⬡ PRAHAR Dashboard</h1>
@@ -43,6 +44,15 @@
         <button onclick="analyzeHeadline()">ANALYZE</button>
     </div>
     <div id="result"></div>
+
+    <!-- M2 Section -->
+<h2>M2 — Deepfake Shield</h2>
+<div class="audio-section">
+    <input type="file" id="video-input" accept=".mp4,.avi,.mov" />
+    <button onclick="analyzeVideo()">ANALYZE VIDEO</button>
+    <div id="video-result"></div>
+    <canvas id="frameChart" style="display:none; margin-top:20px; max-width:700px;"></canvas>
+</div>
 
     <!-- M3 Section -->
     <h2>M3 — AcousticID</h2>
@@ -83,6 +93,74 @@
             if (e.key === 'Enter') analyzeHeadline();
         });
 
+        // M2- DeepFake Detection
+        let frameChart = null;
+
+async function analyzeVideo() {
+    const fileInput = document.getElementById('video-input');
+    if (!fileInput.files[0]) {
+        alert('Please select a video file first!');
+        return;
+    }
+
+    document.getElementById('video-result').innerHTML = '<p style="color:#5a7a8a">Analyzing video... this may take a minute...</p>';
+    document.getElementById('frameChart').style.display = 'none';
+
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    const res = await fetch('/api/video', { method: 'POST', body: formData });
+    const data = await res.json();
+
+    const label = data.final_label;
+    const color = label === 'FAKE' ? '#ff3b3b' : '#00ff88';
+    const flagged = data.avg_fake > 60;
+
+    document.getElementById('video-result').innerHTML = `
+        <div class="audio-result" style="border-color: ${color}; margin-top:15px;">
+            <div class="predicted-label" style="color:${color};">
+                ${label === 'FAKE' ? '⚠️' : '✅'} ${label}
+                ${flagged ? '<span style="background:#ff3b3b; color:white; padding:3px 10px; border-radius:4px; font-size:12px; margin-left:10px;">FLAGGED</span>' : ''}
+            </div>
+            <div style="color:#aaa; margin-bottom:10px;">
+                Frames analyzed: ${data.frames_processed} | 
+                Real: ${data.avg_real}% | 
+                Fake: ${data.avg_fake}%
+            </div>
+        </div>
+    `;
+
+    // Draw frame chart
+    const frames = data.frame_results.map(f => `Frame ${f.frame}`);
+    const scores = data.frame_results.map(f => f.fake_score);
+
+    const canvas = document.getElementById('frameChart');
+    canvas.style.display = 'block';
+
+    if (frameChart) frameChart.destroy();
+
+    frameChart = new Chart(canvas, {
+        type: 'line',
+        data: {
+            labels: frames,
+            datasets: [{
+                label: 'Fake Score %',
+                data: scores,
+                borderColor: '#ff3b3b',
+                backgroundColor: 'rgba(255,59,59,0.1)',
+                tension: 0.3,
+                fill: true
+            }]
+        },
+        options: {
+            plugins: { legend: { labels: { color: '#c8dde8' } } },
+            scales: {
+                x: { ticks: { color: '#5a7a8a', maxTicksLimit: 10 }, grid: { color: '#1e3040' } },
+                y: { min: 0, max: 100, ticks: { color: '#5a7a8a' }, grid: { color: '#1e3040' } }
+            }
+        }
+    });
+}
         // M3 - Audio Classification
         async function analyzeAudio() {
             const fileInput = document.getElementById('audio-input');
