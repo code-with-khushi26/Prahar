@@ -8,7 +8,7 @@ from PIL import Image
 # Load model
 model = models.efficientnet_b0(weights="IMAGENET1K_V1")
 model.classifier[1] = nn.Linear(model.classifier[1].in_features, 2)
-model.load_state_dict(torch.load("models/m2_deepfake/m2_deepfake.pt", map_location="cpu"))
+model.load_state_dict(torch.load("models/m2_deepfake/m2_deepfake_finetuned.pt", map_location="cpu"))
 model.eval()
 
 transform = transforms.Compose([
