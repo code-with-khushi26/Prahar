@@ -4,6 +4,7 @@ import os
 import sqlite3
 from modules.m1_misinfo import analyze
 from modules.m3_acoustic import predict_audio
+from modules.m2_deepfake import analyze_video
 
 app = Flask(__name__)
 
@@ -51,6 +52,20 @@ def api_audio():
     file.save(temp_path)
     result = predict_audio(temp_path)
     os.remove(temp_path)
+    return result
+
+@app.route("/api/video", methods=["POST"])
+def api_video():
+    if "file" not in request.files:
+        return {"error": "No file uploaded"}, 400
+    
+    file = request.files["file"]
+    temp_path = f"temp_{file.filename}"
+    file.save(temp_path)
+    
+    result = analyze_video(temp_path)
+    os.remove(temp_path)
+    
     return result
 
 if __name__ == "__main__":
