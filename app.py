@@ -1,10 +1,12 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request,jsonify
 import json
 import os
 import sqlite3
 from modules.m1_misinfo import analyze
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
+from ultralytics import YOLO
+model = YOLO("models/m4/yolov8n.pt")
 
 app = Flask(__name__)
 
@@ -67,6 +69,23 @@ def api_video():
     os.remove(temp_path)
     
     return result
+
+@app.route("/api/image", methods=["POST"])
+def analyze_image():
+    if "image" not in request.files:
+        return jsonify({"error": "No image uploaded"}), 400
+    file = request.files["image"]
+    save_path = os.path.join("uploads", file.filename)
+    os.makedirs("uploads", exist_ok=True)
+    file.save(save_path)
+    results = model(save_path)
+    r = results[0]
+    detections = [{
+        "class": model.names[int(box.cls[0])],
+        "confidence": float(box.conf[0]),
+        "bbox": box.xyxy[0].tolist()
+    } for box in r.boxes]
+    return jsonify({"filename": file.filename, "detections": detections})
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,4 +1,6 @@
-"models/" 
-"*.safetensors" 
-__pycache__/ 
-*.pyc 
+models/
+*.safetensors
+*.pt
+uploads/
+__pycache__/
+*.pyc
