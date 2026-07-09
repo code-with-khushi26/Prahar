@@ -2,7 +2,7 @@ from flask import Flask, render_template,request,jsonify
 import json
 import os
 import sqlite3
-from fusion import fuse_results
+from fusion import enrich_alert
 from modules.m1_misinfo import analyze
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
@@ -91,12 +91,13 @@ def analyze_image():
 @app.route("/api/fusion", methods=["POST"])
 def api_fusion():
     data = request.get_json()
-    result = fuse_results(
-        image_result=data.get("image"),
-        audio_result=data.get("audio"),
-        video_result=data.get("video"),
-        text_result=data.get("text"),
-    )
+    module = data.get("module")   
+    alert = data.get("alert")     
+
+    if not module or alert is None:
+        return jsonify({"error": "Provide 'module' and 'alert'"}), 400
+
+    result = enrich_alert(module, alert)
     return jsonify(result)
 
 if __name__ == "__main__":
