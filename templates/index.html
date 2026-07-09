@@ -62,6 +62,17 @@
         <div id="audio-result"></div>
     </div>
 
+
+    <!-- M4 Section -->
+    <h2>M4 — Object Detection (YOLO)</h2>
+    <div class="audio-section">
+        <input type="file" id="image-input" accept=".jpg,.jpeg,.png" />
+        <button onclick="analyzeImage()">DETECT OBJECTS</button>
+        <div id="image-result"></div>
+        <canvas id="imageCanvas" style="display:none; margin-top:15px; max-width:700px; border:1px solid #1e3040;"></canvas>
+    </div>
+
+
     <script>
         // M1 - Headline Analysis
         async function analyzeHeadline() {
@@ -195,6 +206,60 @@ async function analyzeVideo() {
                     <div class="predicted-label">🔊 ${data.predicted_class.toUpperCase()}</div>
                     <div style="color:#aaa; margin-bottom:15px;">Confidence: ${data.confidence}%</div>
                     ${barsHTML}
+                </div>
+            `;
+        }
+
+        // M4 - Image Object Detection
+        async function analyzeImage() {
+            const fileInput = document.getElementById('image-input');
+            if (!fileInput.files[0]) {
+                alert('Please select an image file first!');
+                return;
+            }
+
+            document.getElementById('image-result').innerHTML = '<p style="color:#5a7a8a">Detecting objects...</p>';
+            document.getElementById('imageCanvas').style.display = 'none';
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            const res = await fetch('/api/image', { method: 'POST', body: formData });
+            const data = await res.json();
+
+            // Load the image into an <img> to get natural dimensions
+            const img = new Image();
+            img.src = URL.createObjectURL(file);
+            img.onload = () => {
+                const canvas = document.getElementById('imageCanvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                canvas.style.display = 'block';
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, img.width, img.height);
+
+                // data.detections expected as list of {class, confidence, bbox:[x1,y1,x2,y2]}
+                const detections = data.detections || [data];
+                detections.forEach(det => {
+                    const [x1, y1, x2, y2] = det.bbox;
+                    ctx.strokeStyle = '#00ff88';
+                    ctx.lineWidth = 3;
+                    ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+
+                    ctx.fillStyle = '#00ff88';
+                    ctx.font = '16px Arial';
+                    const label = `${det.class} ${(det.confidence * 100).toFixed(1)}%`;
+                    const textWidth = ctx.measureText(label).width;
+                    ctx.fillRect(x1, y1 - 20, textWidth + 10, 20);
+                    ctx.fillStyle = '#000';
+                    ctx.fillText(label, x1 + 5, y1 - 5);
+                });
+            };
+
+            document.getElementById('image-result').innerHTML = `
+                <div class="audio-result">
+                    <div class="predicted-label">📦 ${(data.detections || [data]).length} object(s) detected</div>
                 </div>
             `;
         }
