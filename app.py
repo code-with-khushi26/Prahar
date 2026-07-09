@@ -2,6 +2,7 @@ from flask import Flask, render_template,request,jsonify
 import json
 import os
 import sqlite3
+from fusion import fuse_results
 from modules.m1_misinfo import analyze
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
@@ -86,6 +87,17 @@ def analyze_image():
         "bbox": box.xyxy[0].tolist()
     } for box in r.boxes]
     return jsonify({"filename": file.filename, "detections": detections})
+
+@app.route("/api/fusion", methods=["POST"])
+def api_fusion():
+    data = request.get_json()
+    result = fuse_results(
+        image_result=data.get("image"),
+        audio_result=data.get("audio"),
+        video_result=data.get("video"),
+        text_result=data.get("text"),
+    )
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)
