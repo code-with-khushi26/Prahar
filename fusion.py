@@ -1,7 +1,53 @@
-
 import sqlite3
+import json
+from datetime import datetime
  
 DB_PATH = "database/prahar.db"
+ 
+ 
+def _determine_severity(kb_matches):
+    """Simple severity rule: flagged + matches = HIGH, else LOW."""
+    if kb_matches:
+        return "HIGH"
+    return "LOW"
+ 
+ 
+def save_alert(module, raw_result, enriched_context, severity):
+    """Insert an alert record into the alerts table."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT INTO alerts (timestamp, module, severity, raw_result, enriched_context)
+        VALUES (?, ?, ?, ?, ?)
+    """, (
+        datetime.utcnow().isoformat(),
+        module,
+        severity,
+        json.dumps(raw_result),
+        json.dumps(enriched_context),
+    ))
+    conn.commit()
+    conn.close()
+ 
+ 
+def get_all_alerts():
+    """Fetch all stored alerts, most recent first."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, timestamp, module, severity, raw_result, enriched_context FROM alerts ORDER BY id DESC")
+    rows = cursor.fetchall()
+    conn.close()
+    return [
+        {
+            "id": r[0],
+            "timestamp": r[1],
+            "module": r[2],
+            "severity": r[3],
+            "raw_result": json.loads(r[4]),
+            "enriched_context": json.loads(r[5]) if r[5] else None,
+        }
+        for r in rows
+    ]
  
  
 def _lookup_kb(term):
@@ -70,4 +116,5 @@ def enrich_alert(module, alert):
         "original_alert": alert,
         "kb_matches": kb_matches,
         "flagged": len(kb_matches) > 0,
+        "severity": _determine_severity(kb_matches),
     }

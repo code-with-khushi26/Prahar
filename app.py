@@ -2,7 +2,7 @@ from flask import Flask, render_template,request,jsonify
 import json
 import os
 import sqlite3
-from fusion import enrich_alert
+from fusion import enrich_alert, save_alert, get_all_alerts
 from modules.m1_misinfo import analyze
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
@@ -98,7 +98,17 @@ def api_fusion():
         return jsonify({"error": "Provide 'module' and 'alert'"}), 400
 
     result = enrich_alert(module, alert)
+    save_alert(
+        module=module,
+        raw_result=alert,
+        enriched_context=result,
+        severity=result["severity"],
+    )
     return jsonify(result)
+
+@app.route("/api/alerts", methods=["GET"])
+def api_alerts():
+    return jsonify(get_all_alerts())
 
 if __name__ == "__main__":
     app.run(debug=True)
