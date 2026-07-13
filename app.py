@@ -4,6 +4,7 @@ import os
 import sqlite3
 from fusion import enrich_alert, save_alert, get_all_alerts
 from modules.m1_misinfo import analyze
+from modules.factcheck import fact_check
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
 from ultralytics import YOLO
@@ -45,6 +46,14 @@ def api_analyze():
         return {"error": "No text provided"}, 400
     result = analyze(text)
     return result
+
+@app.route("/api/factcheck")
+def api_factcheck():
+    claim = request.args.get("text", "")
+    if not claim:
+        return {"error": "No text provided"}, 400
+    result = fact_check(claim)
+    return jsonify(result)
 
 @app.route("/api/audio", methods=["POST"])
 def api_audio():
