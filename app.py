@@ -8,6 +8,7 @@ from modules.factcheck import fact_check
 from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
 from ultralytics import YOLO
+from watchdog_pipeline import run_watchdog_cycle
 model = YOLO("models/m4/yolov8n.pt")
 
 app = Flask(__name__)
@@ -118,6 +119,11 @@ def api_fusion():
 @app.route("/api/alerts", methods=["GET"])
 def api_alerts():
     return jsonify(get_all_alerts())
+
+@app.route("/api/watchdog")
+def api_watchdog():
+    results = run_watchdog_cycle(limit_per_feed=3)
+    return jsonify(results)
 
 if __name__ == "__main__":
     app.run(debug=True)
