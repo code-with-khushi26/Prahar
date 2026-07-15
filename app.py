@@ -9,6 +9,7 @@ from modules.m3_acoustic import predict_audio
 from modules.m2_deepfake import analyze_video
 from ultralytics import YOLO
 from watchdog_pipeline import run_watchdog_cycle
+from camobreak import detect_camouflaged
 model = YOLO("models/m4/yolov8n.pt")
 
 app = Flask(__name__)
@@ -124,6 +125,17 @@ def api_alerts():
 def api_watchdog():
     results = run_watchdog_cycle(limit_per_feed=3)
     return jsonify(results)
+
+@app.route("/api/camobreak", methods=["POST"])
+def api_camobreak():
+    if "image" not in request.files:
+        return jsonify({"error": "No image uploaded"}), 400
+    file = request.files["image"]
+    save_path = os.path.join("uploads", file.filename)
+    os.makedirs("uploads", exist_ok=True)
+    file.save(save_path)
+    result = detect_camouflaged(save_path)
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)
