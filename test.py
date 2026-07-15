@@ -1,6 +1,12 @@
-from watchdog_pipeline import run_watchdog_cycle
+import base64
+from modules.m2_deepfake import predict_deepfake
 
-results = run_watchdog_cycle(limit_per_feed=3)
-print(f"Got {len(results)} results")
-for r in results:
-    print(r["headline"], "-", r["final_flag"])
+result = predict_deepfake(r"C:\Users\itzkh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-15 181246.png")
+print("Label:", result["label"], "| Fake score:", result["fake_score"])
+
+if result["heatmap"]:
+    with open("heatmap_output.jpg", "wb") as f:
+        f.write(base64.b64decode(result["heatmap"]))
+    print("Saved heatmap_output.jpg — open it to view")
+else:
+    print("No heatmap generated")
