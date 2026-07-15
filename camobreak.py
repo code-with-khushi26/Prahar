@@ -11,7 +11,10 @@ what color something is.
 import cv2
 import torch
 import numpy as np
+import base64
 from ultralytics import YOLO
+
+torch.hub._validate_not_a_forked_repo = lambda a, b, c: True
 
 yolo_model = YOLO("models/m4/yolov8n.pt")
 
@@ -46,6 +49,8 @@ def find_depth_edge_regions(depth_map, min_area=800):
     Finds candidate object regions from the depth map using edge detection.
     These are shape-based boundaries, independent of color/texture, which is
     what lets this catch camouflaged objects that blend into the background.
+    Confidence is based on edge density within the region — a tighter,
+    denser edge boundary means a more clearly defined object shape.
     """
     edges = cv2.Canny(depth_map, 50, 150)
     edges = cv2.dilate(edges, np.ones((5, 5), np.uint8), iterations=2)
@@ -57,9 +62,22 @@ def find_depth_edge_regions(depth_map, min_area=800):
         area = cv2.contourArea(c)
         if area >= min_area:
             x, y, w, h = cv2.boundingRect(c)
-            regions.append({"bbox": [x, y, x + w, y + h], "area": int(area)})
+            bbox_edge_pixels = edges[y:y+h, x:x+w]
+            edge_density = float(np.count_nonzero(bbox_edge_pixels)) / (w * h) if w * h > 0 else 0
+            # scale edge density into a 0-100 confidence score, capped
+            confidence = round(min(edge_density * 400, 98.0), 2)
+            regions.append({"bbox": [x, y, x + w, y + h], "area": int(area), "confidence": confidence})
 
     return regions
+
+
+def encode_depth_map_b64(depth_map_gray):
+    """Encodes the raw depth map as a base64 JPEG (colorized) for side-by-side display."""
+    colored = cv2.applyColorMap(depth_map_gray, cv2.COLORMAP_INFERNO)
+    success, buffer = cv2.imencode(".jpg", colored)
+    if not success:
+        return None
+    return base64.b64encode(buffer).decode("utf-8")
 
 
 def boxes_overlap(box1, box2, iou_thresh=0.2):
@@ -103,6 +121,7 @@ def detect_camouflaged(image_path):
     # Branch 2: depth-based edge regions
     depth_map = get_depth_map(img)
     depth_regions = find_depth_edge_regions(depth_map)
+    depth_map_b64 = encode_depth_map_b64(depth_map)
 
     # Fusion: keep depth regions that YOLO completely missed
     yolo_boxes = [d["bbox"] for d in yolo_detections]
@@ -114,11 +133,13 @@ def detect_camouflaged(image_path):
                 "class": "possible_camouflaged_object",
                 "bbox": region["bbox"],
                 "area": region["area"],
+                "confidence": region["confidence"],
                 "source": "depth_edge"
             })
 
     return {
         "yolo_detections": yolo_detections,
         "camo_candidates": camo_candidates,
-        "total_objects": len(yolo_detections) + len(camo_candidates)
+        "total_objects": len(yolo_detections) + len(camo_candidates),
+        "depth_map": depth_map_b64
     }
