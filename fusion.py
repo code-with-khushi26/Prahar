@@ -1,17 +1,41 @@
+"""
+fusion.py
+Takes an alert from any PRAHAR module (image/YOLO, audio, video/deepfake,
+text/misinfo) and enriches it with DefenseKB context by looking up
+weapon/org names in the SQLite `weapons` table.
+
+Input alert formats (from your existing modules):
+
+    image alert (from /api/image, per detection):
+        {"class": "truck", "confidence": 0.78, "bbox": [x1,y1,x2,y2]}
+
+    text alert (from /api/analyze), entities list has ORG/PER/LOC/MISC:
+        {"finetuned": {...}, "entities": [{"word": "DRDO", "type": "ORG"}, ...]}
+
+    audio alert (from /api/audio):
+        {"predicted_class": "gunshot", "confidence": 92.1, "all_scores": {...}}
+
+    video alert (from /api/video):
+        {"final_label": "FAKE", "avg_fake": 82.3, ...}
+
+The enrichment step extracts a "search term" per module type, queries the
+`weapons` table (name/type/description), and attaches any matches found.
+"""
+
 import sqlite3
 import json
 from datetime import datetime
- 
+
 DB_PATH = "database/prahar.db"
- 
- 
+
+
 def _determine_severity(kb_matches):
     """Simple severity rule: flagged + matches = HIGH, else LOW."""
     if kb_matches:
         return "HIGH"
     return "LOW"
- 
- 
+
+
 def save_alert(module, raw_result, enriched_context, severity):
     """Insert an alert record into the alerts table."""
     conn = sqlite3.connect(DB_PATH)
@@ -28,8 +52,8 @@ def save_alert(module, raw_result, enriched_context, severity):
     ))
     conn.commit()
     conn.close()
- 
- 
+
+
 def get_all_alerts():
     """Fetch all stored alerts, most recent first."""
     conn = sqlite3.connect(DB_PATH)
@@ -48,55 +72,66 @@ def get_all_alerts():
         }
         for r in rows
     ]
- 
- 
+
+
 def _lookup_kb(term):
-    """Search the DefenseKB weapons table for a matching term."""
+    """Search the DefenseKB weapons table for a matching term, returning the full fact card."""
     if not term:
         return []
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT * FROM weapons
+        SELECT id, name, type, country, description, specs, operators, threat_classification, drdo_links
+        FROM weapons
         WHERE name LIKE ? OR type LIKE ? OR description LIKE ?
     """, (f"%{term}%", f"%{term}%", f"%{term}%"))
     rows = cursor.fetchall()
     conn.close()
     return [
-        {"id": r[0], "name": r[1], "type": r[2], "country": r[3], "description": r[4]}
+        {
+            "id": r[0],
+            "name": r[1],
+            "type": r[2],
+            "country": r[3],
+            "description": r[4],
+            "specs": r[5],
+            "operators": r[6].split(",") if r[6] else [],
+            "threat_classification": r[7],
+            "drdo_links": r[8].split(",") if r[8] else [],
+        }
         for r in rows
     ]
- 
- 
+
+
 def _extract_terms(module, alert):
     """Pull out the term(s) worth checking against DefenseKB for each module type."""
     terms = []
- 
+
     if module == "image":
         # single detection dict, or a list of them
         detections = alert if isinstance(alert, list) else [alert]
         for det in detections:
             if det.get("class"):
                 terms.append(det["class"])
- 
+
     elif module == "text":
         for ent in alert.get("entities", []):
             if ent.get("type") in ("ORG", "MISC"):
                 terms.append(ent["word"])
- 
+
     elif module == "audio":
         if alert.get("predicted_class"):
             terms.append(alert["predicted_class"])
- 
+
     elif module == "video":
         # deepfake alerts usually don't map to weapon names directly,
         # but kept here in case labels reference equipment/org names
         if alert.get("final_label") == "FAKE":
             terms.append("deepfake")
- 
+
     return terms
- 
- 
+
+
 def enrich_alert(module, alert):
     """
     Takes a module name ('image', 'text', 'audio', 'video') and its raw
@@ -104,13 +139,13 @@ def enrich_alert(module, alert):
     alert enriched with any matches.
     """
     terms = _extract_terms(module, alert)
- 
+
     kb_matches = {}
     for term in terms:
         matches = _lookup_kb(term)
         if matches:
             kb_matches[term] = matches
- 
+
     return {
         "module": module,
         "original_alert": alert,
